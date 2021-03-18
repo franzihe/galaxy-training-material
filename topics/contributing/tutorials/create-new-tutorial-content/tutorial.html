@@ -70,55 +70,78 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQ
         </a>
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/master/topics/contributing/tutorials/create-new-tutorial-content/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fcreate-new-tutorial-content%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
 
         <div class="dropdown-item">
             <div>
@@ -150,12 +173,27 @@
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/contributing/tutorials/create-new-tutorial-content/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -380,7 +418,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Dec 14, 2020 </p>
+            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 4, 2021 </p>
         </blockquote>
 
         <div class="container">
@@ -420,6 +458,7 @@
       <li><a href="#warning-box" id="markdown-toc-warning-box"><strong>Warning</strong> box</a></li>
       <li><a href="#nested-boxes" id="markdown-toc-nested-boxes">Nested boxes</a></li>
       <li><a href="#code-box" id="markdown-toc-code-box"><strong>Code</strong> box</a></li>
+      <li><a href="#icons" id="markdown-toc-icons">Icons</a></li>
     </ol>
   </li>
   <li><a href="#citations" id="markdown-toc-citations">Citations</a></li>
@@ -683,7 +722,7 @@ blabla
 
 <h3 id="guidelines-on-alt-vs-figcaption-text">Guidelines on Alt vs Figcaption Text</h3>
 
-<blockquote class="blockquote">
+<blockquote class="quote">
   <p>While both the alt attribute and the figcaption element provide a way to
 describe images, the way we write for them is different. <strong><code class="language-plaintext highlighter-rouge">alt</code> descriptions
 should be functional; <code class="language-plaintext highlighter-rouge">figcaption</code> descriptions should be editorial or
@@ -692,10 +731,31 @@ illustrative.</strong></p>
   <p><a href="https://thoughtbot.com/blog/alt-vs-figcaption"><em>via thoughtbot.com</em></a></p>
 </blockquote>
 
-<p>As an example:</p>
+<p>As an example for this image:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;figure</span> <span class="na">id=</span><span class="s">"figure-2"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"../../images/plasmid-metagenomics-nanopore/sequence_method.jpg"</span> <span class="na">alt=</span><span class="s">"Image of cell membrance with an embedded protein with central pore. <span class="notranslate">DNA</span> is shown splitting and entering the pore, an electrical signal comes out reading A C T or G."</span> <span class="nt">&gt;&lt;figcaption&gt;&lt;span</span> <span class="na">class=</span><span class="s">"figcaption-prefix"</span><span class="nt">&gt;</span>Figure 2:<span class="nt">&lt;/span&gt;</span> Using nanopore sequencing, a single molecule of <span class="notranslate">DNA</span> or <span class="notranslate">RNA</span> can be sequenced without the need for PCR amplification or chemical labeling of the sample. (Image from: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://nanoporetech.com/sites/default/files/s3/white-papers/WGS_Assembly_white_paper.pdf?submissionGuid=40a7546b-9e51-42e7-bde9-b5ddef3c3512"</span><span class="nt">&gt;</span>Nanopore sequencing: The advantages of long <span class="notranslate">reads</span> for genome assembly<span class="nt">&lt;/a&gt;</span>)<span class="nt">&lt;/figcaption&gt;&lt;/figure&gt;</span> <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+<figure id="figure-2"><img src="/training-material/topics/metagenomics/images/plasmid-metagenomics-nanopore/sequence_method.jpg" alt="alt text" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Example of an image with a caption </figcaption></figure>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt text (shown when image cannot be displayed)</span><span class="p">](</span><span class="sx">path/to/image.png</span> <span class="nn">"Example of an image with a caption"</span><span class="p">)</span>
 </code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Appropriate Contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>alt text</td>
+      <td>Image of cell membrance with an embedded protein with central pore. <span class="notranslate">DNA</span> is shown splitting and entering the pore, an electrical signal comes out reading A C T or G.</td>
+    </tr>
+    <tr>
+      <td>figure caption</td>
+      <td>Using nanopore sequencing, a single molecule of <span class="notranslate">DNA</span> or <span class="notranslate">RNA</span> can be sequenced without the need for PCR amplification or chemical labeling of the sample. (Image from: <a href="https://nanoporetech.com/sites/default/files/s3/white-papers/WGS_Assembly_white_paper.pdf?submissionGuid=40a7546b-9e51-42e7-bde9-b5ddef3c3512">Nanopore sequencing: The advantages of long <span class="notranslate">reads</span> for genome assembly</a>)</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="writing-mathematical-expressions">Writing mathematical <span class="notranslate">expression</span>s</h2>
 
@@ -1287,6 +1347,412 @@ With well chosen wrong answers, MCQs can do much more than just measure how much
 </code></pre></div>  </div>
 </blockquote>
 
+<h2 id="icons">Icons</h2>
+
+<p>To use these icons, take the name of the icon, ‘details’ in this example, and write something like this in your tutorial:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% icon details %}
+</code></pre></div></div>
+
+<div class="row">
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>code-in</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-laptop-code" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>code-out</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>comment</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>congratulations</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>curriculum</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>details</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>docker_image</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-envelope" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>email</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-exchange-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>exchange</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>feedback</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-barchart</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-bug</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-chart-select-data</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-times-circle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-clear</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-columns</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-times" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-cross</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-caret-down" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-dropdown</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-eye</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-gear</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-history</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-info</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-library</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-pencil</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-refresh</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-rulebuilder-history</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-save" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-save</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-th" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-scratchbook</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-selector</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-star</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-tags</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-upload</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-arrows-alt-h" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-wf-connection</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>-wf-new</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">galaxy</span>_instance</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>github</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>gitter</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>hall-of-fame</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>hands_on</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>help</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-comment" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>history-annotate</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-toggle-on" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>history-share</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>instances</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>interactive_tour</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-key" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>keypoints</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>language</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>last_modification</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>level</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>linkedin</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>new-history</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-bullseye" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>objectives</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-orcid" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>orcid</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-check</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-collection</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-file</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-files</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-repeat</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-select</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>param-text</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>question</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-bookmark" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>references</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-check-circle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>requirements</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa fa-search" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>search</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>slides</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>solution</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-sticky-note" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>sticky-note</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>time</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>tip</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>tool</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>topic</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-trophy" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>trophy</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>tutorial</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fab fa-twitter" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>twitter</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>warning</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>wf-input</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-caret-square-up" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">workflow</span>-runtime-toggle</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">workflow</span></div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div><span class="notranslate">workflow</span>-run</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>video</div>
+	</div>
+
+	<div class="col-md-2 col-sm-3" style="text-align: center">
+		<div style="font-size: 400%"><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">icon[0]</span></div>
+		<div>zenodo_link</div>
+	</div>
+
+</div>
+
 <h1 id="citations">Citations</h1>
 <p>If you would like to cite any articles, books or websites in your tutorial, you can do so by adding a file called <code class="language-plaintext highlighter-rouge">tutorial.bib</code> next to your <code class="language-plaintext highlighter-rouge">tutorial.md</code> file. In this file you may enter <a href="http://www.bibtex.org/Using/">bibtex</a> formatted citations. An example is given below:</p>
 
@@ -1407,7 +1873,7 @@ and the corresponding website {% cite <span class="notranslate">galaxy</span>-tr
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Bérénice Batut, Björn Grüning, Saskia Hiltemann, Helena Rasche, 2020 <b>Creating content in Markdown (Galaxy Training Materials)</b>. <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Bérénice Batut, Björn Grüning, Saskia Hiltemann, Helena Rasche, 2021 <b>Creating content in Markdown (Galaxy Training Materials)</b>. <a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1424,9 +1890,9 @@ and the corresponding website {% cite <span class="notranslate">galaxy</span>-tr
 <code id="citation-code">@misc{contributing-create-new-tutorial-content,
     author = "Bérénice Batut and Björn Grüning and Saskia Hiltemann and Helena Rasche",
     title = "Creating content in Markdown (Galaxy Training Materials)",
-    year = "2020",
-    month = "12",
-    day = "14"
+    year = "2021",
+    month = "03",
+    day = "04"
     url = "\url{/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }

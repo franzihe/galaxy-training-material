@@ -46,29 +46,79 @@
                             <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material" title="View on GitHub">
-                            <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> View on GitHub
-                        </a>
-                    </li>
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
-            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */" />
-            <input type="hidden" value="Galaxy Training" name="content_provider" />
-            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="" />
+            <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
+            <input type="hidden" value="Galaxy Training" name="content_provider">
+            <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQ
         </a>
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/master/videos/" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&amp;page=/training-material/videos/" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
+        </a>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&amp;sl=en&amp;tl=fr&amp;u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&amp;edit-text=&amp;act=url">
+                Français
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&amp;sl=en&amp;tl=ja&amp;u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&amp;edit-text=&amp;act=url">
+                日本語
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&amp;sl=en&amp;tl=es&amp;u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&amp;edit-text=&amp;act=url">
+                Español
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&amp;sl=en&amp;tl=pt&amp;u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&amp;edit-text=&amp;act=url">
+                Português
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&amp;sl=en&amp;tl=ar&amp;u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&amp;edit-text=&amp;act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&amp;sl=en&amp;tl=&amp;u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2F%2Ftutorials%2F%2Ftutorial.html&amp;edit-text=&amp;act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
 
         <div class="dropdown-item">
             <div>
@@ -134,49 +184,91 @@ The GTN now generates videos for selected slide decks. Click on a topic below to
  </thead>
  <tbody>
    
+  
   <tr><td><a href="/training-material/topics/introduction/videos/">Introduction to Galaxy Analyses</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/admin/videos/">Galaxy Server administration</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/assembly/videos/">Assembly</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/climate/videos/">Climate</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/computational-chemistry/videos/">Computational chemistry</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/contributing/videos/">Contributing to the Galaxy Training Material</a></td></tr>
+  
     
+  
   <tr><td><a href="/training-material/topics/dev/videos/">Development in Galaxy</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/ecology/videos/">Ecology</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/epigenetics/videos/">Epigenetics</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/galaxy-interface/videos/">Using Galaxy and Managing your Data</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/genome-annotation/videos/">Genome Annotation</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/imaging/videos/">Imaging</a></td></tr>
+  
    
-  <tr><td><a href="/training-material/topics//videos/"></a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/instructors/videos/">Teaching and Hosting Galaxy training</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/metabolomics/videos/">Metabolomics</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/metagenomics/videos/">Metagenomics</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/proteomics/videos/">Proteomics</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/sequence-analysis/videos/">Sequence analysis</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/statistics/videos/">Statistics and machine learning</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/transcriptomics/videos/">Transcriptomics</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/variant-analysis/videos/">Variant Analysis</a></td></tr>
+  
    
+  
   <tr><td><a href="/training-material/topics/visualisation/videos/">Visualisation</a></td></tr>
+  
   
  </tbody>
 </table>
@@ -192,7 +284,7 @@ The GTN now generates videos for selected slide decks. Click on a topic below to
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/2d3729febd21045d9dd328ace35c1fe06a47ff02">2d3729febd21045d9dd328ace35c1fe06a47ff02</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/d414e971ccc63526c13f7693866a5a51cf2e9639">d414e971ccc63526c13f7693866a5a51cf2e9639</a></p>
     </div>
 </footer>
 
