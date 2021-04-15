@@ -82,9 +82,14 @@
         </form>
         -->
 
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/galaxy-interface/faqs/" title="Check our FAQs for the Using Galaxy and Managing your Data topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -102,8 +107,12 @@
     <div class="dropdown-menu dropdown-menu-right">
 
         
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/master/topics/galaxy-interface/tutorials/download-delete-data/tutorial.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/galaxy-interface/tutorials/download-delete-data/tutorial.md" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
         </a>
 
         <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/galaxy-interface/tutorials/download-delete-data/tutorial.html" title="Show view statistics of this page">
@@ -175,7 +184,7 @@
 
                     <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/galaxy-interface/tutorials/download-delete-data/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/galaxy-interface/tutorials/download-delete-data/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
@@ -249,7 +258,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -417,7 +426,7 @@
 
 <p>Other <span class="notranslate">Galaxy</span> servers may have different quota systems.</p>
 
-<p>As you use a <span class="notranslate">Galaxy</span> server and upload data, perform analyses etc. you will use up your quota. If you have filled your quota and you want to do some new work, you can download your old work and delete it off the <span class="notranslate">Galaxy</span> server to free up quota space. <span class="notranslate">Galaxy</span> uses a two step process to delete user data from disk. The first step is to delete the data - this marks the data as deleted but it can be undeleted for a certain time<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>. The second step is to purge the deleted data - this removes the deleted data from the disk and it is no longer recoverable. Note that any data that has been shared with another user will not be deleted from disk unless the other users also delete it.</p>
+<p>As you use a <span class="notranslate">Galaxy</span> server and upload data, perform analyses etc. you will use up your quota. If you have filled your quota and you want to do some new work, you can download your old work and delete it off the <span class="notranslate">Galaxy</span> server to free up quota space. <span class="notranslate">Galaxy</span> uses a two step process to delete user data from disk. The first step is to delete the data - this marks the data as deleted but it can be undeleted for a certain time<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. The second step is to purge the deleted data - this removes the deleted data from the disk and it is no longer recoverable. Note that any data that has been shared with another user will not be deleted from disk unless the other users also delete it.</p>
 
 <p>The second section of this tutorial will outline how to delete data from your user space and to purge it from disk if you so desire.</p>
 
@@ -620,7 +629,7 @@
       </blockquote>
     </li>
     <li>
-      <p>If you only selected <strong>Delete</strong>, the history will be available to un-delete for a certain time<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
+      <p>If you only selected <strong>Delete</strong>, the history will be available to un-delete for a certain time<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
     </li>
   </ol>
 
@@ -655,6 +664,11 @@
                         </ul>
                     </blockquote>
                     
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/galaxy-interface/faqs/">FAQ page for the Using Galaxy and Managing your Data topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                     
 
@@ -766,7 +780,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/galaxy-interface/tutorials/download-delete-data/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/galaxy-interface/tutorials/download-delete-data/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
