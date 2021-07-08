@@ -90,6 +90,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "admin/tutorials/database/slides",
 				"topic": "Galaxy Server administration",
@@ -149,8 +151,6 @@
 				"topic": "Galaxy Server administration",
 				"title": "Gearing towards production"
 			},
-                               
-                       
                                
                        
                                
@@ -282,6 +282,16 @@
                                
                        
                                
+			{
+				"id": "contributing/tutorials/create-new-tutorial-slides/slides",
+				"topic": "Contributing to the Galaxy Training Material",
+				"title": "Creating Slides"
+			},
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -300,6 +310,18 @@
 					
                        
                        
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -333,6 +355,12 @@
                        
                                
                        
+                               
+			{
+				"id": "dev/tutorials/tool-generators/slides",
+				"topic": "Development in Galaxy",
+				"title": "ToolFactory: Generating Tools From Simple Scripts"
+			},
                                
                        
                
@@ -418,6 +446,10 @@
                        
                                
                        
+                               
+                       
+                               
+                       
                
 					
                        
@@ -438,6 +470,14 @@
 				"id": "genome-annotation/tutorials/annotation-with-prokka/slides",
 				"topic": "Genome Annotation",
 				"title": "Genome annotation with Prokka"
+			},
+                               
+                       
+                               
+			{
+				"id": "genome-annotation/tutorials/apollo/slides",
+				"topic": "Genome Annotation",
+				"title": "Refining Genome Annotations with Apollo"
 			},
                                
                        
@@ -567,6 +607,8 @@
                        
                                
                        
+                               
+                       
                
 					
                        
@@ -580,6 +622,14 @@
 					
                        
                        
+                       
+                               
+                       
+                               
+                       
+                               
+                       
+                               
                        
                                
                        
@@ -678,10 +728,20 @@
                        
                                
                        
+                               
+			{
+				"id": "transcriptomics/tutorials/mirna-target-finder/slides",
+				"topic": "Transcriptomics",
+				"title": "Whole transcriptome analysis of Arabidopsis thaliana"
+			},
+                               
+                       
                
 					
                        
                        
+                       
+                               
                        
                                
                        

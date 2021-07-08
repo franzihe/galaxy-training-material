@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Introduction to recurrent neural networks (RNN)</title>
+        <title>Deep Learning (Part 2) - Recurrent neural networks (RNN)</title>
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -23,7 +24,7 @@
         
         
         <meta name="description" content="Statistical Analyses for omics data and machine learning ..." />
-        <meta property="og:title" content="Galaxy Training: Introduction to recurrent neural networks (RNN)" />
+        <meta property="og:title" content="Galaxy Training: Deep Learning (Part 2) - Recurrent neural networks (RNN)" />
         <meta property="og:description" content="Statistical Analyses for omics data and machine learning ..." />
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
     </head>
@@ -126,23 +127,25 @@
 
             <div id="lang-selector">
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
                 Français
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
                 日本語
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
                 Español
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
                 Português
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/statistics/tutorials/RNN/tutorial.html&edit-text=&act=url">
                 العربية
                 </a>
                 
@@ -154,7 +157,7 @@
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -170,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -179,6 +185,26 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-08-01/topics/statistics/tutorials/RNN/tutorial.html" title="Version 2019-08-01">2019-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-07-01/topics/statistics/tutorials/RNN/tutorial.html" title="Version 2019-07-01">2019-07-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-06-01/topics/statistics/tutorials/RNN/tutorial.html" title="Version 2019-06-01">2019-06-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -250,7 +276,7 @@
     "url": "https://galaxyproject.org/teach/gtn/"
   },
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
-  "headline": "Introduction to recurrent neural networks (RNN)",
+  "headline": "Deep Learning (Part 2) - Recurrent neural networks (RNN)",
   "inLanguage": {
     "@type": "Language",
     "name": "English",
@@ -285,7 +311,7 @@
   },
   "courseCode": "statistics / RNN / hands-on",
   "learningResourceType": "hands-on tutorial",
-  "name": "Hands-on for 'Introduction to recurrent neural networks (RNN)' tutorial",
+  "name": "Hands-on for 'Deep Learning (Part 2) - Recurrent neural networks (RNN)' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/statistics/tutorials/RNN/tutorial.html",
   "timeRequired": "PT2H",
   "description": "The questions this  addresses are:\n - What is a recurrent neural network (RNN)?\n - What are some applications of RNN?\n\n\\nThe objectives are:\n - Understand the difference between feedforward neural networks (FNN) and RNN\n - Learn various RNN types and architectures\n - Learn how to create a neural network using Galaxy's deep learning tools\n - Solve a sentiment analysis problem on IMDB movie review dataset using RNN in Galaxy\n\n",
@@ -307,6 +333,34 @@
       "url": "https://training.galaxyproject.org//training-material/topics/statistics/tutorials/intro_deep_learning/tutorial.html",
       "name": "Introduction to deep learning",
       "description": "Hands-on for 'Introduction to deep learning' tutorial",
+      "learningResourceType": "hands-on tutorial",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/statistics/tutorials/FNN/slides.html",
+      "name": "Feedforward neural networks (FNN) \n Deep Learning - Part 1",
+      "description": "Slides for 'Feedforward neural networks (FNN) \n Deep Learning - Part 1' tutorial",
+      "learningResourceType": "slides",
+      "interactivityType": "expositive",
+      "provider": {
+        "@type": "Organization",
+        "email": "galaxytrainingnetwork@gmail.com",
+        "name": "Galaxy Training Network",
+        "url": "https://galaxyproject.org/teach/gtn/"
+      }
+    },
+    {
+      "@type": "Course",
+      "url": "https://training.galaxyproject.org//training-material/topics/statistics/tutorials/FNN/tutorial.html",
+      "name": "Deep Learning (Part 1) - Feedforward neural networks (FNN)",
+      "description": "Hands-on for 'Deep Learning (Part 1) - Feedforward neural networks (FNN)' tutorial",
       "learningResourceType": "hands-on tutorial",
       "interactivityType": "expositive",
       "provider": {
@@ -350,8 +404,8 @@
 }
     </script>
 
-    <section class="tutorial">
-        <h1 data-toc-skip>Introduction to recurrent neural networks (RNN)</h1>
+    <section class="tutorial topic-statistics">
+        <h1 data-toc-skip>Deep Learning (Part 2) - Recurrent neural networks (RNN)</h1>
         
 
         <div class="contributors-line">By: 
@@ -424,6 +478,12 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
                             
                             <li> Introduction to deep learning:
                             
@@ -433,6 +493,51 @@
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Deep Learning (Part 1) - Feedforward neural networks (FNN):
+                            
+                                <a href="/training-material/topics/statistics/tutorials/FNN/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                
+                            
+                            
+                                
+                                    - <a href="/training-material/topics/statistics/tutorials/FNN/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -453,7 +558,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 2 hours</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 2 hours</div>
             
 
             
@@ -462,9 +567,13 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
+                
+                    <li class="btn btn-default"><a href="/training-material/topics/statistics/tutorials/RNN/slides.html" title="Slides for this tutorial">
+                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Slides
+                    </a></li>
                 
 
                 
@@ -478,7 +587,7 @@
 
                 
                     <li class="btn btn-default supporting_material">
-    <a class="topic-icon" href="/training-material/topics/statistics/tutorials/RNN/workflows/" title="Workflows" alt="Introduction to recurrent neural networks (RNN) workflows">
+    <a class="topic-icon" href="/training-material/topics/statistics/tutorials/RNN/workflows/" title="Workflows" alt="Deep Learning (Part 2) - Recurrent neural networks (RNN) workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i><span class="visually-hidden">workflow</span> Workflows
     </a>
 
@@ -545,14 +654,14 @@
         
     
         
-    
-        
-    
-        
-    
-        
         <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
             Galaxy Africa
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
+            Galaxy India
         </a>
         
     
@@ -574,8 +683,6 @@
         <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
             Galaxy@GenOuest
         </a>
-        
-    
         
     
         
@@ -637,6 +744,10 @@
         
     
         
+    
+        
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
@@ -667,6 +778,12 @@
         
     
         
+        <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
+            UseGalaxy.org.au
+        </a>
+        
+    
+        
     
         
     
@@ -681,7 +798,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 23, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> May 21, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -714,7 +831,7 @@ describe various RNN architectures and solve a sentiment analysis problem using 
 <ol id="markdown-toc">
   <li><a href="#review-of-feedforward-neural-networks-fnn" id="markdown-toc-review-of-feedforward-neural-networks-fnn">Review of feedforward neural networks (FNN)</a>    <ol>
       <li><a href="#single-layer-fnn" id="markdown-toc-single-layer-fnn">Single layer FNN</a></li>
-      <li><a href="#multi-layer-ffn" id="markdown-toc-multi-layer-ffn">Multi-layer FFN</a></li>
+      <li><a href="#multi-layer-fnn" id="markdown-toc-multi-layer-fnn">Multi-layer FNN</a></li>
       <li><a href="#learning-algorithm" id="markdown-toc-learning-algorithm">Learning algorithm</a></li>
     </ol>
   </li>
@@ -740,8 +857,8 @@ describe various RNN architectures and solve a sentiment analysis problem using 
 
 <p>In feedforward neural networks (FNN) a single training example is presented to the network,
 after which the the network generates an output. For example, a lung X-ray image is passed
-to a FNN, and the network predicts tumor or no tumor. By contrast, in RNN a sequence of
-training examples are presented to the network one at a time. For example, a sequence of
+to a FNN, and the network predicts tumor or no tumor. By contrast, in RNN a training example
+is a sequence, which is presented to the network one at a time. For example, a sequence of
 English words is passed to a RNN, one at a time, and the network generates a sequence of
 Persian words, one at a time. RNN handle sequential data, whether its temporal or ordinal.</p>
 
@@ -760,7 +877,7 @@ functions, please refer to <a class="citation" href="#nwankpaEtAl">Nwankpa <i>et
 
 <figure id="figure-3"><img src="../../images/sigmoid.gif" alt="Mathmatical formula for Sigmoid activation function" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Sigmoid activation function</figcaption></figure>
 
-<h2 id="multi-layer-ffn">Multi-layer FFN</h2>
+<h2 id="multi-layer-fnn">Multi-layer FNN</h2>
 
 <p>Minsky and Papert showed that a single layer FNN cannot solve problems in which the data is not linearly separable,
 such as the XOR problem (<a class="citation" href="#Newell780">Newell 1969</a>). Adding one (or more) hidden layers to FNN enables it to solve problems
@@ -795,7 +912,7 @@ direction of the gradient, to find the local minimum.</p>
 <h2 id="possible-rnn-inputsoutputs">Possible RNN inputs/outputs</h2>
 
 <p>There are 4 possible input/output combinations for RNN and each have a specific application. One-to-one is basically a FNN. One-to-many,
-where we have one input and a variable number of output. One example application is image captioning, where a single image is provided
+where we have one input and a variable number of outputs. One example application is image captioning, where a single image is provided
 as input and a variable number of words (which caption the image) is returned as output (See Figure 7).</p>
 
 <figure id="figure-7"><img src="../../images/RNN_1_to_n.png" alt="Neurons forming a one-to-many recurrent neural network" /><figcaption><span class="figcaption-prefix">Figure 7:</span> One-to-many RNN</figcaption></figure>
@@ -816,14 +933,15 @@ we pass in n words in English and get m words in Italian (See Figure 9).</p>
 
 <p>Mainly, there are three types of RNN: 1) Vanilla RNN, 2) LSTM (<a class="citation" href="#hochreiter1997long">Hochreiter and Schmidhuber 1997</a>), and 3) GRU (<a class="citation" href="#cho-etal-2014-learning">Cho <i>et al.</i> 2014</a>).
 A Vanilla RNN, simply combines the state information from the previous timestamp with the input from the current timestamp to generate the
-state information for current timestamp. The problem with Vanilla RNN is that training deep RNN networks is impossible due to the
-<strong>vanishing gradient</strong> problem. Basically, starting from the output layer, in order to determine weights/biases updates, we need to calculate
-the derivative of the loss function relative to the layers input, which is usually a small number. This is not a problem for the output layer,
-but for the previous layers, this process must be repeated recursively, resulting in very small updates to weights/biases of the initial layers
-of the RNN, halting the learning process.</p>
+state information and output for current timestamp. The problem with Vanilla RNN is that training deep RNN networks is impossible due to the
+<strong>vanishing gradient</strong> problem. Basically, weights/biases are updated according to the gradient of the loss functions relative to 
+the weights/biases. The gradients are calculated recursively from the output layer towards the input layer (Hence, the name <em>backpropagation</em>).
+The gradient of the input layer is the product of the gradient of the subsequent layers. If those gradients are small, the gradient of the input
+layer (which is the product of multiple small values) will very small, resulting in very small updates to weights/biases of the initial layers
+of the RNN, effectively halting the learning process.</p>
 
 <p>LSTM and GRU are two RNN architectures that address vanishing gradient problem. Full description of LSTM/GRU is beyond the scope of this
-tutorial (Please refer to ref1 and ref2), but in a nutshell both LSTM and GRU use <strong>gates</strong> such that the weights/biases updates in previous
+tutorial (Please refer to <a class="citation" href="#hochreiter1997long">Hochreiter and Schmidhuber 1997</a> and <a class="citation" href="#cho-etal-2014-learning">Cho <i>et al.</i> 2014</a>), but in a nutshell both LSTM and GRU use <strong>gates</strong> such that the weights/biases updates in previous
 layers are calculated via a series of additions (not multiplications). Hence, these architectures can learn even when the RNN has hundreds or
 thousands of layers.</p>
 
@@ -848,7 +966,7 @@ the next 10,000 words in our dataset. Reviews are limited to 500 words. They are
 
 <h2 id="bag-of-words-and-tf-idf">Bag of words and TF-IDF</h2>
 
-<p>If you don’t care about the order of the words in a document, you can use bag of words (BoW) or text frequency inverse document frequency (TF-IDF).
+<p>If you don’t care about the order of the words in a document, you can use bag of words (BoW) or term frequency inverse document frequency (TF-IDF).
 In these models we have a 2 dimensional array. The rows represent the documents (in our example, the movie reviews) and the columns
 represent the words in our vocabulary (all the unique words in all the documents). If a word is not present in a document, we have a zero
 at the corresponding row and column as the entry. If a word is present in the document, we have a one as the entry – Alte<span class="notranslate">rna</span>tively, we could use
@@ -862,7 +980,7 @@ representation of these documents is given in Figure 10.</p>
 <p>BoW’s advantage is its simplicity, yet it does not take into account the rarity of a word across documents, which unlike common words are
 important for document classification.</p>
 
-<p>In TF-IDF, similar to BoW we have an entry for each document-word pair. In TD-IDF, the entry is the product of 1) Text frequency, the
+<p>In TF-IDF, similar to BoW we have an entry for each document-word pair. In TD-IDF, the entry is the product of 1) Term frequency, the
 frequency of a word in a document, and 2) Inverse document frequency, the inverse of the number of documents that have the word divided
 by the total number of documents (we usually use logarithm of the IDF).</p>
 
@@ -904,7 +1022,7 @@ cost function via backpropagation.</p>
       <p>Create a new history for this tutorial</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panelIf the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>    <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>    <li>Select the option <strong>Create New</strong> from the menu</li>  </ol></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Import the files from <a href="https://zenodo.org/record/4477881">Zenodo</a> or from the shared data library</p>
@@ -916,22 +1034,22 @@ https://zenodo.org/record/4477881/files/y_train.tsv
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>    <li>Copy the link location</li>    <li>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</li>    <li>Select <strong>Paste/Fetch Data</strong></li>    <li>Paste the link into the text field</li>    <li>Press <strong>Start</strong></li>    <li><strong>Close</strong> the windowBy default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li>  </ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>    <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>    <li>Find the correct folder (ask your instructor)</li>    <li>Select the desired files</li>    <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>    <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>    <li>Click on <strong>Import</strong></li>  </ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
     </li>
     <li>
       <p>Rename the datasets as <code class="language-plaintext highlighter-rouge">X_test</code>, <code class="language-plaintext highlighter-rouge">X_train</code>, <code class="language-plaintext highlighter-rouge">y_test</code>, and <code class="language-plaintext highlighter-rouge">y_train</code> respectively.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>    <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>    <li>In the central panel, change the <strong>Name</strong> field</li>    <li>Click the <strong>Save</strong> button</li>  </ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li>
       <p>Check that the datatype of all the four datasets is <code class="language-plaintext highlighter-rouge">tabular</code>. If not, change the dataset’s datatype to tabular.</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>    <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>    <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>    <li>Select <code class="language-plaintext highlighter-rouge">tabular</code></li>    <li>Click the <strong>Change datatype</strong> button</li>  </ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">tabular</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -1128,7 +1246,7 @@ to use the <strong>F score</strong>, which is the harmonic mean of precision and
 class labels (we have 10,397 + 2,103 = 12,500 reviews with negative sentiment). The second row represents the <em>true</em> 1 (or positive sentiment) class labels
 (Again, we have 1,281 + 11,219 = 12,500 reviews with positive sentiment). The left column represents the <em>predicted</em> negative sentiment class labels (Our RNN
 predicted 10,397 + 1,281 = 11,678 reviews as having a negative sentiment). The right column represents the <em>predicted</em> positive class labels (Our RNN
-predicted 11,219 + 2,103 = 13,322 reviews as having a positive sentiment).Looking at the bottom right cell, we seethat our RNN has correctly predicted 11,219
+predicted 11,219 + 2,103 = 13,322 reviews as having a positive sentiment).Looking at the bottom right cell, we see that our RNN has correctly predicted 11,219
 reviews as having a positive sentiment (True positives). Looking at the top right cell, we see that our RNN has incorrectly predicted 2,103 reviews as having
 a positive (False positives). Similarly, looking at the top left cell, we see that our RNN has correctly predicted 10,397 reviews as having negative sentiment
 (True negative). Finally, looking at the bottom left cell, we see that our RNN has incorrectly predicted 1,281 reviews as negative (False negative). Given
@@ -1289,6 +1407,8 @@ classification problem using RNN on IMDB movie reviews dataset.</p>
 </li></ol>
                     
 
+                    
+
                     <h1>Feedback</h1>
                     <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
 
@@ -1313,7 +1433,7 @@ classification problem using RNN on IMDB movie reviews dataset.</p>
                                     e.hide();
 
                                     $("#feedback-form").html(`
-                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Introduction to recurrent neural networks (RNN) (Statistics and machine learning)">Loading...</iframe>
+                                        <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Deep Learning (Part 2) - Recurrent neural networks (RNN) (Statistics and machine learning)">Loading...</iframe>
                                     `)
                                 })
                             });
@@ -1325,7 +1445,7 @@ classification problem using RNN on IMDB movie reviews dataset.</p>
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Kaivan Kamali, 2021 <b>Introduction to recurrent neural networks (RNN) (Galaxy Training Materials)</b>. <a href="/training-material/topics/statistics/tutorials/RNN/tutorial.html">/training-material/topics/statistics/tutorials/RNN/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Kaivan Kamali, 2021 <b>Deep Learning (Part 2) - Recurrent neural networks (RNN) (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/statistics/tutorials/RNN/tutorial.html">https://training.galaxyproject.org/training-material/topics/statistics/tutorials/RNN/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1341,11 +1461,11 @@ classification problem using RNN on IMDB movie reviews dataset.</p>
                     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code id="citation-code">@misc{statistics-RNN,
     author = "Kaivan Kamali",
-    title = "Introduction to recurrent neural networks (RNN) (Galaxy Training Materials)",
+    title = "Deep Learning (Part 2) - Recurrent neural networks (RNN) (Galaxy Training Materials)",
     year = "2021",
-    month = "03",
-    day = "23"
-    url = "\url{/training-material/topics/statistics/tutorials/RNN/tutorial.html}",
+    month = "05",
+    day = "21"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/statistics/tutorials/RNN/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1373,15 +1493,78 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+                    <blockquote class="agenda follow-up">
+                        <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
+                        <ul>
+                            
+    <li>
+    
+        
+        
+        <a href="/training-material/topics/statistics">Statistics and machine learning</a>
+        
+            <ul>
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Deep Learning (Part 3) - Convolutional neural networks (CNN):
+                            
+                                <a href="/training-material/topics/statistics/tutorials/CNN/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                
+                            
+                            
+                                
+                                    - <a href="/training-material/topics/statistics/tutorials/CNN/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+            </ul>
+        
+    
+    </li>
+
+                        </ul>
+                    </blockquote>
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 

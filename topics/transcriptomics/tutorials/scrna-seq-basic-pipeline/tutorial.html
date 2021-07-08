@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
 
         
         
@@ -126,23 +127,25 @@
 
             <div id="lang-selector">
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
                 Français
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
                 日本語
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
                 Español
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
                 Português
                 </a>
                 
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html&edit-text=&act=url">
                 العربية
                 </a>
                 
@@ -154,7 +157,7 @@
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -170,6 +173,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -179,6 +185,26 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-08-01/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html" title="Version 2019-08-01">2019-08-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-07-01/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html" title="Version 2019-07-01">2019-07-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2019-06-01/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html" title="Version 2019-06-01">2019-06-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
@@ -288,7 +314,7 @@
   "name": "Hands-on for 'Filter, Plot and Explore Single-cell RNA-seq Data' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html",
   "timeRequired": "PT3H",
-  "keywords": "single-cell, 10x",
+  "keywords": "single-cell, 10x, paper-replication",
   "description": "The questions this  addresses are:\n - Is my single cell dataset a quality dataset?\n - How do I generate and annotate cell clusters?\n - How do I pick thresholds and parameters in my analysis? What's a \"reasonable\" number, and will the world collapse if I pick the wrong one?\n\n\\nThe objectives are:\n - Interpret quality control plots to direct parameter decisions\n - Repeat analysis from matrix to clustering\n - Identify decision-making points\n - Appraise data outputs and decisions\n - Explain why single cell analysis is an iterative (i.e. the first plots you generate are not final, but rather you go back and re-analyse your data repeatedly) process\n\n",
   "coursePrerequisites": [
     {
@@ -407,7 +433,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-transcriptomics">
         <h1 data-toc-skip>Filter, Plot and Explore Single-cell RNA-seq Data</h1>
         
 
@@ -597,6 +623,8 @@
                     
                         
                     
+                        
+                    
                 
             </ul>
         
@@ -607,7 +635,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</div>
             
 
             
@@ -616,7 +644,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -663,10 +691,6 @@
             </a>
         </li>
     
-    
-        
-    
-        
     
         
     
@@ -797,6 +821,14 @@
         
     
         
+        <a class="dropdown-item" href="https://usegalaxy.org" title="UseGalaxy.org (Main)">
+            UseGalaxy.org (Main)
+        </a>
+        
+    
+        
+    
+        
     
         
     
@@ -811,7 +843,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 24, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 1, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -840,7 +872,7 @@
   <li><a href="#filtering" id="markdown-toc-filtering">Filtering</a>    <ol>
       <li><a href="#generate-qc-plots" id="markdown-toc-generate-qc-plots">Generate QC Plots</a></li>
       <li><a href="#analysing-the-plots" id="markdown-toc-analysing-the-plots">Analysing the plots</a></li>
-      <li><a href="#apply-the-thresholds" id="markdown-toc-apply-the-thresholds">Apply the Thresholds</a></li>
+      <li><a href="#apply-the-thresholds" id="markdown-toc-apply-the-thresholds">Apply the thresholds</a></li>
     </ol>
   </li>
   <li><a href="#processing" id="markdown-toc-processing">Processing</a></li>
@@ -850,7 +882,7 @@
       <li><a href="#dimensionality-reduction-for-visualisation" id="markdown-toc-dimensionality-reduction-for-visualisation">Dimensionality reduction for visualisation</a></li>
     </ol>
   </li>
-  <li><a href="#cell-clusters--gene-markers" id="markdown-toc-cell-clusters--gene-markers">Cell Clusters &amp; Gene Markers</a>    <ol>
+  <li><a href="#cell-clusters--gene-markers" id="markdown-toc-cell-clusters--gene-markers">Cell clusters &amp; gene markers</a>    <ol>
       <li><a href="#findmarkers" id="markdown-toc-findmarkers">FindMarkers</a></li>
     </ol>
   </li>
@@ -881,14 +913,14 @@
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>    <li>Copy the link location</li>    <li>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</li>    <li>Select <strong>Paste/Fetch Data</strong></li>    <li>Paste the link into the text field</li>    <li>Press <strong>Start</strong></li>    <li><strong>Close</strong> the windowBy default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li>  </ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
     </li>
     <li><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the datasets <code class="language-plaintext highlighter-rouge">Mito-counted AnnData</code></li>
     <li>
       <p>Check that the datatype is <code class="language-plaintext highlighter-rouge">h5ad</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>    <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>    <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>    <li>Select <code class="language-plaintext highlighter-rouge">h5ad</code></li>    <li>Click the <strong>Change datatype</strong> button</li>  </ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">h5ad</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -956,7 +988,7 @@
 <p><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> <strong>Top time-saving advice</strong> - turn the 3 <strong>Inspect AnnData</strong> outputs above into a <span class="notranslate">workflow</span> for quick access!</p>
 
 <!--SNIPPET-->
-<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-workflow"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new <span class="notranslate">workflow</span></h3>  <ol>    <li>Click <strong><span class="notranslate">Workflow</span></strong> on the top bar</li>    <li>Click the new <span class="notranslate">workflow</span> <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-new</span> button</li>    <li>Give it a clear and memorable name</li>    <li>Clicking <strong>Save</strong> will take you directly into the <span class="notranslate">workflow</span> editor for that <span class="notranslate">workflow</span></li>    <li>Need more help? Please see the <em>How to make a <span class="notranslate">workflow</span> subsection</em> <a href="/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html">here</a></li>  </ol></blockquote>
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-extracting-a-workflow-from-your-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Extracting a <span class="notranslate">workflow</span> from your history</h3>  <ol>  <li>Remove any failed or unwanted jobs from your history.</li>  <li>Click on <strong>History options</strong> (gear icon <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span>) at the top of your history panel.</li>  <li>Select <strong>Extract <span class="notranslate">workflow</span></strong></li>  <li>Check the steps, enter a name for your <span class="notranslate">workflow</span>, and press the <strong>Create <span class="notranslate">Workflow</span></strong> button.</li></ol></blockquote>
 
 <h2 id="generate-qc-plots">Generate QC Plots</h2>
 
@@ -1086,7 +1118,7 @@
 <p>That’s a lot of information! Let’s attack this in sections and see what questions these plots can help us answer. The <em>scratchbook</em> <i class="fas fa-th" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-scratchbook</span> may help here to look at the different plots at the same time!</p>
 
 <!--SNIPPET-->
-<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-using-the-scratchbook-to-view-multiple-datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Using the Scratchbook to view multiple datasets</h3>  <p>If you would like to view two or more datasets at once, you can use the <strong>Scratchbook</strong> feature in <span class="notranslate">Galaxy</span>:</p>  <ol>    <li><strong>Click</strong> on the <em>Scratchbook</em> icon <i class="fas fa-th" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-scratchbook</span> on the top menu bar.      <ul>        <li>You should see a little checkmark on the icon now</li>      </ul>    </li>    <li><strong>View</strong> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> a dataset by clicking on the eye icon <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> to view the output      <ul>        <li>You should see the output in a window overlayed over <span class="notranslate">Galaxy</span></li>        <li>You can resize this window by dragging the bottom-right corner</li>      </ul>    </li>    <li><strong>Click</strong> outside the file to exit the Scratchbook</li>    <li><strong>View</strong> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> a second dataset from your history      <ul>        <li>You should now see a second window with the new dataset</li>        <li>This makes it easier to compare the two outputs</li>      </ul>    </li>    <li>Repeat this for as many files as you would like to compare</li>    <li>You can turn off the <strong>Scratchbook</strong> <i class="fas fa-th" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-scratchbook</span> by clicking on the icon again</li>  </ol></blockquote>
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-using-the-scratchbook-to-view-multiple-datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Using the Scratchbook to view multiple datasets</h3>  <p>If you would like to view two or more datasets at once, you can use the <strong>Scratchbook</strong> feature in <span class="notranslate">Galaxy</span>:</p>  <ol>  <li><strong>Click</strong> on the <em>Scratchbook</em> icon <i class="fas fa-th" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-scratchbook</span> on the top menu bar.    <ul>      <li>You should see a little checkmark on the icon now</li>    </ul>  </li>  <li><strong>View</strong> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> a dataset by clicking on the eye icon <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> to view the output    <ul>      <li>You should see the output in a window overlayed over <span class="notranslate">Galaxy</span></li>      <li>You can resize this window by dragging the bottom-right corner</li>    </ul>  </li>  <li><strong>Click</strong> outside the file to exit the Scratchbook</li>  <li><strong>View</strong> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-eye</span> a second dataset from your history    <ul>      <li>You should now see a second window with the new dataset</li>      <li>This makes it easier to compare the two outputs</li>    </ul>  </li>  <li>Repeat this for as many files as you would like to compare</li>  <li>You can turn off the <strong>Scratchbook</strong> <i class="fas fa-th" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-scratchbook</span> by clicking on the icon again</li></ol></blockquote>
 
 <blockquote class="question">
   <h3 id="question-question---batch-variation"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question - Batch Variation</h3>
@@ -1239,7 +1271,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
   </blockquote>
 </blockquote>
 
-<h2 id="apply-the-thresholds">Apply the Thresholds</h2>
+<h2 id="apply-the-thresholds">Apply the thresholds</h2>
 
 <p>It’s now time to apply these thresholds to our data! First, a reminder of how many cells and genes are in your object: <code class="language-plaintext highlighter-rouge">25281 cells</code> and <code class="language-plaintext highlighter-rouge">35734 genes</code>. Let’s see how that changes each time!</p>
 
@@ -1636,7 +1668,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
 
 <blockquote class="comment">
   <h3 id="comment-2262"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> 2262???</h3>
-  <p>Where did the <code class="language-plaintext highlighter-rouge">2262</code> come from? The quickest way to figure out how many highly variable genes you have, in my opinion, is to re-run <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the <strong>Scanpy FindVariableGenes</strong> tool and select the parameter to <em>Remove genes not marked as highly variable</em>. Then you can Inspect your resulting object and you’ll see only 2262 genes. I prefer to keep these in the object, just in case something is important (paranoia?), but you will get the same results whether you keep these or remove them. The following steps all use only highly variable genes.</p>
+  <p>Where did the <code class="language-plaintext highlighter-rouge">2262</code> come from? The quickest way to figure out how many highly variable genes you have, in my opinion, is to re-run <i class="fas fa-sync-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-refresh</span> the <strong>Scanpy FindVariableGenes</strong> tool and select the parameter to <em>Remove genes not marked as highly variable</em>. Then you can Inspect your resulting object and you’ll see only 2262 genes. The following processing steps will use only the highly variable genes for their calculations, but I strongly suggest you keep even the nonvariable genes in (i.e., use the original output of your FindVariableGenes tool with way more than 2262 genes!), as a general rule. This tutorial will not work at the end plotting stage if you only take forward the 2262 or 2000 (if you set a limit on it) highly variable genes.</p>
 </blockquote>
 
 <blockquote class="notranslate hands_on">
@@ -1740,7 +1772,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
 
 <p><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations! You have prepared your object and created neighborhood coordinates. We can now use those to call some clusters!</p>
 
-<h1 id="cell-clusters--gene-markers">Cell Clusters &amp; Gene Markers</h1>
+<h1 id="cell-clusters--gene-markers">Cell clusters &amp; gene markers</h1>
 
 <blockquote class="question">
   <h3 id="question-question"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -1779,7 +1811,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
   <ol>
     <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/ebi-gxa/scanpy_find_cluster/scanpy_find_cluster/1.6.0+galaxy4" title="Tested with toolshed.g2.bx.psu.edu/repos/ebi-gxa/scanpy_find_cluster/scanpy_find_cluster/1.6.0+galaxy4"><strong>Scanpy FindCluster</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/ebi-gxa/scanpy_find_cluster/scanpy_find_cluster/1.6.0+<span class="notranslate">galaxy</span>4</span></span>  with the following parameters:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input object in AnnData/Loom format”</em>: <code class="language-plaintext highlighter-rouge">output_h5ad</code> (output of <strong>Scanpy ComputeGraph</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input object in AnnData/Loom format”</em>: <code class="language-plaintext highlighter-rouge">output_h5ad</code> (output of <strong>Scanpy RunUMAP</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         <li><em>“Use programme defaults”</em>: <i class="fas fa-toggle-on" aria-hidden="true"></i><span class="visually-hidden">history-share</span> <code class="language-plaintext highlighter-rouge">No</code></li>
         <li><em>“Resolution, high value for more and smaller clusters”</em>: <code class="language-plaintext highlighter-rouge">0.6</code></li>
       </ul>
@@ -1833,7 +1865,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
   <ol>
     <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+galaxy0"><strong>Inspect AnnData</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/anndata_inspect/anndata_inspect/0.7.5+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Annotated data matrix”</em>: <code class="language-plaintext highlighter-rouge">Final matrix</code></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Annotated data matrix”</em>: <code class="language-plaintext highlighter-rouge">Final object</code></li>
         <li><em>“What to inspect?”</em>: <code class="language-plaintext highlighter-rouge">Key-indexed annotation of variables/features (var)</code></li>
       </ul>
     </li>
@@ -1842,7 +1874,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
   <p>This gives us our table of all the possible genes with their names.</p>
 
   <ol>
-    <li><span class="tool" data-tool="tool_id=join1" title="Tested with tool_id=join1"><strong>Join two Datasets side by side on a specified field</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: tool_id=join1</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="join1" title="Tested with join1"><strong>Join two Datasets side by side on a specified field</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: join1</span></span>  with the following parameters:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Join”</em>: <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> Select multiple files: <code class="language-plaintext highlighter-rouge">Markers - cluster</code> and <code class="language-plaintext highlighter-rouge">Markers - genotype</code></li>
         <li><em>“using column”</em>: <code class="language-plaintext highlighter-rouge">Column: 4</code></li>
@@ -1859,7 +1891,7 @@ Any bioinformatician will tell you that the best way to get clean data is in the
   <p>We have lots of extra information we don’t need in our marker gene tables, so…</p>
 
   <ol>
-    <li><span class="tool" data-tool="tool_id=Cut1" title="Tested with tool_id=Cut1"><strong>Cut columns from a table</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: tool_id=Cut1</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="Cut1" title="Tested with Cut1"><strong>Cut columns from a table</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Cut1</span></span>  with the following parameters:
       <ul>
         <li><em>“Cut columns”</em>: <code class="language-plaintext highlighter-rouge">c1,c2,c3,c4,c11,c5,c6,c7,c8</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> Select multiple files: <code class="language-plaintext highlighter-rouge">out_file1</code> and <code class="language-plaintext highlighter-rouge">output_file2</code> (outputs of <strong>Join two Datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
@@ -2137,7 +2169,7 @@ If we look at the differences between genotypes alone (so the pseudo-bulk), we c
   <h3 id="hands_on-hands-on-cellxgene"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Cellxgene</h3>
 
   <ol>
-    <li><span class="tool" data-tool="tool_id=interactive_tool_cellxgene" title="Tested with tool_id=interactive_tool_cellxgene"><strong>Interactive CellXgene Environment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: tool_id=interactive_tool_cellxgene</span></span>  with the following parameters:
+    <li><span class="tool" data-tool="interactive_tool_cellxgene" title="Tested with interactive_tool_cellxgene"><strong>Interactive CellXgene Environment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_cellxgene</span></span>  with the following parameters:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Concatenate dataset”</em>: <code class="language-plaintext highlighter-rouge">Final cell annotated object</code></li>
       </ul>
@@ -2176,14 +2208,14 @@ For those that did not take the ‘control’ options, please</p>
         <p>Add a history annotation <i class="fas fa-comment" aria-hidden="true"></i><span class="visually-hidden">history-annotate</span> that includes which parameters you changed/steps you changed from the <em>control</em></p>
 
         <!--SNIPPET-->
-        <blockquote class="tip">  <h3 data-toc-skip="" id="tip-tip--sharing-your-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip : Sharing your history</h3>  <p>Sharing your history allows others to import and access the datasets, parameters, and steps of your history.</p>  <ol>    <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> <em>History options</em> icon in your history</li>    <li>Click on the <i class="fas fa-toggle-on" aria-hidden="true"></i><span class="visually-hidden">history-share</span> <em>Share or publish</em> option</li>    <li>Click on the <strong>Make History accessible</strong> option</li>    <li>Click on the **Make History publicly available in Published Histories</li>    <li>If you want to make changes to your history without affecting the shared version, make a copy by going to <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> <em>History options</em> icon in your history and clicking <em>Copy</em></li>  </ol></blockquote>
+        <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-sharing-your-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Sharing your History</h3>  <p>Sharing your history allows others to import and access the datasets, parameters, and steps of your history.</p>  <ol>  <li><strong>Share via link</strong>    <ul>      <li>Open the <strong>History Options</strong> <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> menu (gear icon) at the top of your history panel        <ul>          <li><i class="fas fa-toggle-on" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-toggle</span> <strong>Make History accessible</strong></li>          <li>A <strong>Share Link</strong> will appear that you give to others</li>        </ul>      </li>      <li>Anybody who has this link can view and copy your history</li>    </ul>  </li>  <li><strong>Publish your history</strong>    <ul>      <li><i class="fas fa-toggle-on" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-toggle</span> <strong>Make History publicly available in Published Histories</strong></li>      <li>Anybody on this <span class="notranslate">Galaxy</span> server will see your history listed under the <em>Shared Data</em> menu</li>    </ul>  </li>  <li><strong>Share only with another user</strong>.    <ul>      <li>Click the <strong>Share with a user</strong> button at the bottom</li>      <li>Enter an email address for the user you want to share with</li>      <li>Your history will be shared only with this user.</li>    </ul>  </li>  <li><strong>Finding histories others have shared with me</strong>    <ul>      <li>Click on <strong>User</strong> menu on the top bar</li>      <li>Select <strong>Histories shared with me</strong></li>      <li>Here you will see all the histories others have shared with you directly</li>    </ul>  </li></ol>  <p><strong>Note:</strong> If you want to make changes to your history without affecting the shared version, make a copy by going to <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> <em>History options</em> icon in your history and clicking <em>Copy</em></p></blockquote>
       </li>
       <li>Feel free to explore any other similar histories</li>
     </ol>
   </blockquote>
 </blockquote>
 
-<p><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations! You’ve made it to the end! You might find this <a href="https://humancellatlas.usegalaxy.eu/u/wendi.bacon.training/h/filter-plot-and-explore-single-cell-rna-seq-data---answer-key">example control history</a> helpful to compare with.</p>
+<p><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations! You’ve made it to the end! You might find this <a href="https://humancellatlas.usegalaxy.eu/u/wendi.bacon.training/h/filter-plot-and-explore-single-cell-rna-seq-data---answer-key">example control history</a> helpful to compare with, or this <a href="https://humancellatlas.usegalaxy.eu/u/wendi.bacon.training/w/filter-plot-and-explore-single-cell-rna-seq-data"><span class="notranslate">workflow</span></a>.</p>
 
 <p>In this tutorial, you moved from technical processing to biological exploration. By analysing real data - both the exciting and the messy! - you have, hopefully, experienced what it’s like to analyse and question a dataset, potentially without clear cut-offs or clear answers. If you were working in a group, you each analysed the data in different ways, and most likely found similar insights. One of the biggest problems in analysing sc<span class="notranslate">RNA</span>-seq is the lack of a clearly defined pathway or parameters. You have to make the best call you can as you move through your analysis, and ultimately, when in doubt, try it multiple ways and see what happens!</p>
 
@@ -2299,6 +2331,8 @@ For those that did not take the ‘control’ options, please</p>
 </li></ol>
                     
 
+                    
+
                     <h1>Feedback</h1>
                     <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
 
@@ -2335,7 +2369,7 @@ For those that did not take the ‘control’ options, please</p>
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Wendi Bacon, 2021 <b>Filter, Plot and Explore Single-cell RNA-seq Data (Galaxy Training Materials)</b>. <a href="/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html">/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Wendi Bacon, 2021 <b>Filter, Plot and Explore Single-cell RNA-seq Data (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -2353,9 +2387,9 @@ For those that did not take the ‘control’ options, please</p>
     author = "Wendi Bacon",
     title = "Filter, Plot and Explore Single-cell RNA-seq Data (Galaxy Training Materials)",
     year = "2021",
-    month = "03",
-    day = "24"
-    url = "\url{/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html}",
+    month = "07",
+    day = "01"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -2383,15 +2417,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
