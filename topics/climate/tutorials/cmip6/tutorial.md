@@ -49,7 +49,7 @@ According to the [Glossary of Meteorology](https://glossary.ametsoc.org/wiki/Cli
 The prediction of various aspects of the climate of a region during some future period of time.
 
 Climate predictions are generally in the form of probabilities of anomalies of climate variables (e.g., temperature, precipitation), with lead times up to several seasons (
-see climate anomaly). The term "climate projection" rather than "climate prediction" is now commonly used for longer- range predictions that have a higher degree of uncertainty and a lesser degree of specificity. For example, this term is often used for "predictions" of climate change that depend on uncertain consequences of anthropogenic influences such as land use and the burning of fossil fuels.
+see climate anomaly). The term "climate projection" rather than "climate prediction" is now commonly used for longer-range predictions with a higher degree of uncertainty and a lesser degree of specificity. For example, this term is often used for "predictions" of climate change that depend on uncertain consequences of anthropogenic influences such as land use and the burning of fossil fuels.
 ~~~
 
 ## Motivation
@@ -62,7 +62,7 @@ see climate anomaly). The term "climate projection" rather than "climate predict
 
 
 
-In this tutorial we will use Coupled Model Intercomparison Project 6 (CMIP6) output of surface snowfall rate and cloud phase. We are interested if there is a correlation between the already known cloud phase bias and the surface snowfall rate in GCMS.
+This tutorial will use Coupled Model Intercomparison Project 6 (CMIP6) output of surface snowfall rate and cloud phase. We are interested in a correlation between the already known cloud phase bias and the surface snowfall rate in GCMS.
 
 
 > ### Agenda
@@ -74,20 +74,16 @@ In this tutorial we will use Coupled Model Intercomparison Project 6 (CMIP6) out
 >
 {: .agenda}
 
-# Title for your first section
+# What is CMIP6?
+CMIP6 is the Coupled Model Intercomparison Project in its 6th phase. [CMIP6](https://esgf-node.llnl.gov/projects/cmip6/) coordinates independent model intercomparisons and their experiments. Further, they organize and distribute outputs from these standardized experiments. The results by CMIP6 have been widely used to understand the climate and project future climate scenarios, such as in the [IPCC Assessment Reports](https://www.ipcc.ch/).
 
-Give some background about what the trainees will be doing in the section.
-
-Below are a series of hand-on boxes, one for each tool in your workflow file.
-Often you may wish to combine several boxes into one or make other adjustments such
-as breaking the tutorial into sections, we encourage you to make such changes as you
-see fit, this is just a starting point :)
-
-Anywhere you find the word "***TODO***", there is something that needs to be changed
-depending on the specifics of your tutorial.
-
-have fun!
-
+# Outcome
+* We will learn how to retrieve CMIP6 data through the Pangeo CMIP6
+* How to make a simple plot of a variable
+* Regridd the CMIP6 variables to the exact horizontal resolution
+* Calculate an ensemble mean of all used models
+* Calculate and plot the seasonal mean 
+  
 ## Get data
 
 > ### {% icon hands_on %} Hands-on: Data upload
