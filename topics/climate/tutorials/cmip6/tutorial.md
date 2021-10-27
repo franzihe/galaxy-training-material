@@ -78,9 +78,9 @@ This tutorial will use Coupled Model Intercomparison Project 6 (CMIP6) output of
 CMIP6 is the Coupled Model Intercomparison Project in its 6th phase. [CMIP6](https://esgf-node.llnl.gov/projects/cmip6/) coordinates independent model intercomparisons and their experiments. Further, they organize and distribute outputs from these standardized experiments. The results by CMIP6 have been widely used to understand the climate and project future climate scenarios, such as in the [IPCC Assessment Reports](https://www.ipcc.ch/).
 
 # Outcome
-* We will learn how to retrieve CMIP6 data through the Pangeo CMIP6
+* We will learn how to retrieve CMIP6 data through the [Pangeo CMIP6](https://pangeo-data.github.io/pangeo-cmip6-cloud/)
 * How to make a simple plot of a variable
-* Regridd the CMIP6 variables to the exact horizontal resolution
+* Regridd the CMIP6 variables to the exact horizontal resolution with [`xesmf`](https://xesmf.readthedocs.io/en/latest/)
 * Calculate an ensemble mean of all used models
 * Calculate and plot the seasonal mean 
   
@@ -112,7 +112,80 @@ CMIP6 is the Coupled Model Intercomparison Project in its 6th phase. [CMIP6](htt
 >
 {: .hands_on}
 
-# Title of the section usually corresponding to a big step in the analysis
+# Plot the snowfall for January between 1985 - 2014 from NorESM2-MM
+For this task, the CMIP6 experiment_id = 'historical'
+> ### {% icon hands_on %} Hands-on: Open CMIP6 online catalog with Pangeo CMIP6
+>
+>   
+>    > ### {% icon solution %} Solution
+>    > ```
+>    > cat_url = "https://storage.googleapis.com/cmip6/pangeo-cmip6.json"
+>    > col = intake.open_esm_datastore(cat_url)
+>    > col
+>    > ```
+> ### {% icon hands_on %} Hands-on: Search CMIP6 high resolution models (~100 km) 
+> The variable we later want to plot is snowfall. 
+> | shortname     |             Long name                   |      Units    |  levels |
+> | ------------- |:---------------------------------------:| -------------:|--------:|
+> |  prsn         |    Snowfall Flux                        | [kg m-2 s-1]  | surface |
+> 
+>    > ### {% icon solution %} Solution
+>    > ```
+>    > list_models = ['NorESM2-MM', 'TaiESM1', 'EC-Earth3-AerChem',
+>    >                'GFDL-ESM4', 'SAM0-UNICON', 'CAS-ESM2-0',
+>    >                'MPI-ESM1-2-HR', 'BCC-CSM2-MR', 'E3SM-1-0',
+>    >                'E3SM-1-1', 'CMCC-CM2-SR5', 'CESM2-WACCM-FV2',
+>    >                'CESM2', 'E3SM-1-1-ECA', 'GFDL-CM4', 'MRI-ESM2-0']
+>    > variable_id = ['prsn]
+>    > cat = col.search(source_id=list_models, experiment_id=['historical'], variable_id=variable_id[0], member_id=['r1i1p1f1'])
+>    > cat.df
+>    > ```
+> ### {% icon hands_on %} Hands-on: Create dictonary from the list of datasets we found
+>    > ### {% icon solution %} Solution
+>    > ```
+>    > dset_dict = cat.to_dataset_dict(zarr_kwargs={'use_cftime':True})
+>    > ```
+> ### {% icon hands_on %} Hands-on: Make a plot of mean surface snowfall for January 1985 - 2014
+>    > ### {% icon solution %} Solution
+>    > ```
+>    > # open dataset from dictonary
+>    > ds = dset_dict['CMIP.NCC.NorESM2-MM.historical.Amon.gn']
+>    > ds
+>    > ```
+>    > Create 30-year mean for surface snowfall in January and convert the snowfall from [kg m-2 s-1] to [mm day-1]
+>    > ```
+>    > prsn_month = ds.prsn.groupby('time.month').mean('time')
+>    > ```
+>    > Plot 30-year for January for the Northern Hemisphere above 30$^o$N
+>    > ```
+>    > fig, ax = plt.subplots(1,1, figsize=[10,10], subplot_kw={'projection':ccrs.Orthographic(30, 90)})
+>    > fig.suptitle('CMIP6 - high resolution (1985 - 2014)', fontsize=16, fontweight="bold")
+>    > # Plot cosmetics 
+>    > ax.coastlines()
+>    > gl = ax.gridlines()
+>    > ax.add_feature(cy.feature.BORDERS);
+>    > gl.top_labels = False
+>    > # Plot variable
+>    > im = prsn_month.sel(month = 1).plot(ax=ax, transform=ccrs.PlateCarree(), add_colorbar = False,levels = np.arange(0.00, 7.25, 0.25), extend = 'max')
+>    > 
+>    > #add colorbar
+>    > cb = fig.colorbar(im, orientation="vertical", fraction=0.046, pad=0.04)
+>    > cb.set_label(label='Snowfall (mm$\,$day$^{-1}$)', weight='bold') 
+>    > plt.tight_layout()
+>    > fig.subplots_adjust(top=1)
+>    > ```
+
+
+
+# Regrid CMIP6 model output to NorESM2-MM grid using `xesmf`
+
+> ### {% icon hands_on %} Hands-on: 
+>
+>   
+>    > ### {% icon solution %} Solution
+>    > ```
+
+
 
 It comes first a description of the step: some background and some theory.
 Some image can be added there to support the theory explanation:
