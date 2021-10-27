@@ -41,17 +41,29 @@ contributors:
 {:.no_toc}
 
 <!-- This is a comment. -->
+## What is climate prediction?
 
-- Is Climate Change a threat for Winter tourism in the Alps?
+According to the [Glossary of Meteorology](https://glossary.ametsoc.org/wiki/Climate_prediction), _climate prediction_ is defined as 
 
-General introduction about the topic and then an introduction of the
-tutorial (the questions and the objectives). It is nice also to have a
-scheme to sum up the pipeline used during the tutorial. The idea is to
-give to trainees insight into the content of the tutorial and the (theoretical
-and technical) key concepts they will learn.
+~~~  
+The prediction of various aspects of the climate of a region during some future period of time.
 
-**Please follow our
-[tutorial to learn how to fill the Markdown]({{ site.baseurl }}/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html)**
+Climate predictions are generally in the form of probabilities of anomalies of climate variables (e.g., temperature, precipitation), with lead times up to several seasons (
+see climate anomaly). The term "climate projection" rather than "climate prediction" is now commonly used for longer- range predictions that have a higher degree of uncertainty and a lesser degree of specificity. For example, this term is often used for "predictions" of climate change that depend on uncertain consequences of anthropogenic influences such as land use and the burning of fossil fuels.
+~~~
+
+## Motivation
+* **Cloud feedbacks** are the major contributor to **high climate sensitivity** in global climate models (GCMs) [(Flato et al., 2013)](https://www.cambridge.org/core/books/climate-change-2013-the-physical-science-basis/evaluation-of-climate-models/94BC2268C864F2C6A18436DB22BD1E5A).
+* In a warming climate, the **cloud phase changes** (reduction of ice phase), which has significant **implications for radiation, glacier, and ice sheet mass balances**.
+* GCMs **underestimate** the ice water path and **overestimate** the liquid water path compared to satellite measurements [(Komurcu et al., 2014)](https://doi.org/10.1002/2013JD021119).
+* The over-/underestimation is likely **related to the parameterization** of ice nucleation and growth processes in GCMs.
+* Which will **impact** the precipitation microphysics and **the amount of solid and liquid precipitation** reaching the ground. 
+* The **majority** of the total precipitation reaching the ground **originates from mixed-phase processes** [(Mülmenstädt et al. 2015)](https://doi.org/10.1002/2015GL064604)
+
+
+
+In this tutorial we will use Coupled Model Intercomparison Project 6 (CMIP6) output of surface snowfall rate and cloud phase. We are interested if there is a correlation between the already known cloud phase bias and the surface snowfall rate in GCMS.
+
 
 > ### Agenda
 >
