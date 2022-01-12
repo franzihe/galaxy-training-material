@@ -49,6 +49,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -107,41 +142,6 @@
 
         <div class="dropdown-item">
             <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/dev/tutorials/tool-generators-advanced/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fdev%2Ftutorials%2Ftool-generators-advanced%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
-
-        <div class="dropdown-item">
-            <div>
                 <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
@@ -196,7 +196,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -226,6 +226,8 @@
 
 
 <!-- Gitter -->
+
+
 
 
 <script>
@@ -274,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "ToolFactory: Generating Tools From More Complex Scripts",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -314,6 +313,11 @@
   "url": "https://training.galaxyproject.org//training-material/topics/dev/tutorials/tool-generators-advanced/tutorial.html",
   "timeRequired": "PT1H",
   "description": "The questions this  addresses are:\n - What else can I do with the ToolFactory?\n\n\\nThe objectives are:\n - Further develop your ToolFactory Skills\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "Course",
@@ -512,16 +516,22 @@
     <h1 data-toc-skip>ToolFactory: Generating Tools From More Complex Scripts</h1>
     
 
-    <div class="contributors-line">By: 
 
- <a href="/training-material/hall-of-fame/fubar2/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/fubar2" alt="Avatar">Ross Lazarus</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/fubar2/" class="contributor-badge contributor-fubar2"><img src="https://avatars.githubusercontent.com/fubar2?s=27" alt="Avatar">Ross Lazarus</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
-        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions</strong>
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
         <li><p>What else can I do with the ToolFactory?</p>
@@ -529,7 +539,7 @@
         
         </ul>
 
-        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives</strong>
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
         <ul>
         
         <li><p>Further develop your ToolFactory Skills</p>
@@ -538,7 +548,7 @@
         </ul>
 
         
-        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements</strong>
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
         <ul>
         
         
@@ -584,11 +594,7 @@
                     
                         
                     
-                        
-                    
                 
-                    
-                        
                     
                         
                     
@@ -666,6 +672,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Tool development and integration into Galaxy:
                             
@@ -703,6 +711,17 @@
                         
                     
                         
+                            
+                            <li> Galaxy Interactive Environments:
+                            
+                                <a href="/training-material/topics/dev/tutorials/interactive-environments/slides.html"><i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> slides</a>
+                                
+                            
+                            
+                            </li>
+                        
+                    
+                        
                     
                         
                     
@@ -727,6 +746,8 @@
                         
                     
                 
+                    
+                        
                     
                         
                     
@@ -798,10 +819,10 @@
         
 
         
-        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/dev/slides/introduction.html">
+                <li class="btn btn-default supporting_material"><a href="/training-material/topics/dev/slides/introduction.html" title="Topic Overview slides">
                     <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
                 </a></li>
             
@@ -813,14 +834,51 @@
             
 
             
+
             
             
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Video Library for these Training Materials">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> GTN Video Library
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/dev/tool-generators-advanced/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
+
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -839,9 +897,13 @@
         </ul>
         
 
-        <div><strong> <i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jun 17, 2021 </div>
-        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong> Tutorial Content is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> The GTN Framework is <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a></div>
-
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jun 17, 2021 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
     </blockquote>
 
     <div class="container">
@@ -851,6 +913,8 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
+                
+
                 <blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
 
@@ -880,7 +944,10 @@
     </ol>
   </li>
   <li><a href="#your-turn-please-help-improve-this-community-resource" id="markdown-toc-your-turn-please-help-improve-this-community-resource">Your turn! Please help improve this community resource!</a></li>
-  <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a></li>
+  <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a>    <ol>
+      <li><a href="#for-making-it-easy-to-pop-up-and-flavour-docker-galaxy-stable" id="markdown-toc-for-making-it-easy-to-pop-up-and-flavour-docker-galaxy-stable">for making it easy to pop-up and flavour docker-<span class="notranslate">galaxy</span>-stable</a></li>
+    </ol>
+  </li>
 </ol>
 
 </blockquote>
@@ -1370,7 +1437,7 @@ Script::
       <li>The user sees the following form after adding 3 repeats for each of the two available items</li>
     </ul>
 
-    <p><img src="../../images/toolfactory_repeats_sample_form.png" alt="User can add as many repeats as they want for repeated input file and parameter values" loading="lazy" /></p>
+    <p><img src="../../images/toolfactory_repeats_sample_form.png" alt="User can add as many repeats as they want for repeated input file and parameter values. " loading="lazy" /></p>
   </blockquote>
 </blockquote>
 
@@ -1412,7 +1479,7 @@ Script::
 is configured as shown below, from “rerunning” the plotter job from the sample history.</li>
     </ul>
 
-    <p><img src="../../images/toolfactory_plotter_demo_form.png" alt="ToolFactory form configuration of the output collection in the plotter example" loading="lazy" /></p>
+    <p><img src="../../images/toolfactory_plotter_demo_form.png" alt="ToolFactory form configuration of the output collection in the plotter example. " loading="lazy" /></p>
 
     <p>The Rscript is contained in a configfile so<code class="language-plaintext highlighter-rouge">#</code> is escaped - this is automatic.</p>
 
@@ -1524,7 +1591,7 @@ As shown above, the script only has to write the files to a directory.
 Note that the test is over-ridden in the ToolFactory form to generate this tool.
 Without an over-ride to suit your script, an empty test will be generated that will not do any testing - see warning above.</p>
 
-    <p><img src="../../images/toolfactory_plotter_sample_output.png" alt="Plotter collection opens to show all the plots as separate items to be viewed or downloaded" loading="lazy" /></p>
+    <p><img src="../../images/toolfactory_plotter_sample_output.png" alt="Plotter collection opens to show all the plots as separate items to be viewed or downloaded. " loading="lazy" /></p>
   </blockquote>
 </blockquote>
 
@@ -1545,7 +1612,7 @@ Without an over-ride to suit your script, an empty test will be generated that w
     <p>The ToolFactory form section for user configurable command line settings is
 configured as shown here for the select demonstration</p>
 
-    <p><img src="../../images/toolfactory_select_demo_form.png" alt="Form to configure an additional parameter as a select" loading="lazy" /></p>
+    <p><img src="../../images/toolfactory_select_demo_form.png" alt="Form to configure an additional parameter as a select. " loading="lazy" /></p>
 
     <p>The generated XML is shown below.</p>
 
@@ -1606,7 +1673,7 @@ Script::
 </code></pre></div>    </div>
     <p>The generated tool form from the select demonstration shows the three options and returns the one selected.</p>
 
-    <p><img src="../../images/toolfactory_select_test_tool.png" alt="Generated form seen by users of the select demonstration tool" loading="lazy" /></p>
+    <p><img src="../../images/toolfactory_select_test_tool.png" alt="Generated form seen by users of the select demonstration tool. " loading="lazy" /></p>
   </blockquote>
 </blockquote>
 
@@ -2228,16 +2295,21 @@ Thanks all! It has been a lot of fun.</p>
 <p>Special thanks to:</p>
 
 <ul>
-  <li><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Avatar" />Helena Rasche</a> for
-    <ul>
-      <li>review and contribution to the tutorial and associated code.</li>
-      <li>the vision of instant installation of generated tools for developer feedback.</li>
-      <li>elegantly generated lint-free XML provided by <a href="https://github.com/hexylena/galaxyxml"><span class="notranslate">galaxy</span>ml code</a></li>
-    </ul>
-  </li>
-  <li><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bgruening" alt="Avatar" />Björn Grüning</a> for making it easy to pop-up and flavour <a href="https://github.com/bgruening/docker-galaxy-stable">docker-<span class="notranslate">galaxy</span>-stable</a></li>
-  <li><a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mvdbeek" alt="Avatar" />Marius van den Beek</a> for thoughtful comments on the role of the ToolFactory that helped motivate the tutorial.</li>
+  <li><a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar" />Helena Rasche</a></li>
 </ul>
+
+<p>for
+    - review and contribution to the tutorial and associated code.
+    - the vision of instant installation of generated tools for developer feedback.
+    - elegantly generated lint-free XML provided by <a href="https://github.com/hexylena/galaxyxml"><span class="notranslate">galaxy</span>ml code</a></p>
+<ul>
+  <li><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar" />Björn Grüning</a></li>
+</ul>
+
+<h2 id="for-making-it-easy-to-pop-up-and-flavour-docker-galaxy-stable">for making it easy to pop-up and flavour <a href="https://github.com/bgruening/docker-galaxy-stable">docker-<span class="notranslate">galaxy</span>-stable</a></h2>
+<p><a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge contributor-mvdbeek"><img src="https://avatars.githubusercontent.com/mvdbeek?s=27" alt="Avatar" />Marius van den Beek</a></p>
+
+<p>for thoughtful comments on the role of the ToolFactory that helped motivate the tutorial.</p>
 
 
                 
@@ -2288,7 +2360,9 @@ Thanks all! It has been a lot of fun.</p>
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />

@@ -49,6 +49,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -107,41 +142,6 @@
 
         <div class="dropdown-item">
             <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/epigenetics/tutorials/methylation-seq/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fepigenetics%2Ftutorials%2Fmethylation-seq%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
-
-        <div class="dropdown-item">
-            <div>
                 <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
@@ -196,7 +196,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -226,6 +226,8 @@
 
 
 <!-- Gitter -->
+
+
 
 
 <script>
@@ -274,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:39 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "DNA Methylation data analysis",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -314,6 +313,11 @@
   "url": "https://training.galaxyproject.org//training-material/topics/epigenetics/tutorials/methylation-seq/tutorial.html",
   "timeRequired": "PT3H",
   "description": "The questions this  addresses are:\n - What is methylation and why it cannot be recognised by a normal NGS procedure?\n - Can a different methylation influence the expression of a gene? How?\n - Which tools you can use to analyse methylation data?\n\n\\nThe objectives are:\n - Learn how to analyse methylation data\n - Get a first intuition what are common pitfalls.\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "CreativeWork",
@@ -457,16 +461,25 @@
     <h1 data-toc-skip>DNA Methylation data analysis</h1>
     
 
-    <div class="contributors-line">By: 
 
- <a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/joachimwolff" alt="Avatar">Joachim Wolff</a> <a href="/training-material/hall-of-fame/dpryan79/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/dpryan79" alt="Avatar">Devon Ryan</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/joachimwolff/" class="contributor-badge contributor-joachimwolff"><img src="https://avatars.githubusercontent.com/joachimwolff?s=27" alt="Avatar">Joachim Wolff</a>
+
+
+<a href="/training-material/hall-of-fame/dpryan79/" class="contributor-badge contributor-dpryan79"><img src="https://avatars.githubusercontent.com/dpryan79?s=27" alt="Avatar">Devon Ryan</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
-        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions</strong>
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
         <li><p>What is methylation and why it cannot be recognised by a normal NGS procedure?</p>
@@ -480,7 +493,7 @@
         
         </ul>
 
-        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives</strong>
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
         <ul>
         
         <li><p>Learn how to analyse methylation data</p>
@@ -492,7 +505,7 @@
         </ul>
 
         
-        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements</strong>
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
         <ul>
         
     <li>
@@ -573,16 +586,18 @@
         
 
         
-        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/epigenetics/slides/introduction-dna-methylation.html">
+                <li class="btn btn-default supporting_material"><a href="/training-material/topics/epigenetics/slides/introduction-dna-methylation.html" title="Topic Overview slides">
                     <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
                 </a></li>
             
 
             
                 <li class="btn btn-default supporting_material">
+
+
 <a class="topic-icon" href="https://zenodo.org/record/557099">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
@@ -592,6 +607,8 @@
 
             
                 <li class="btn btn-default supporting_material">
+
+
     <a class="topic-icon" href="/training-material/topics/epigenetics/tutorials/methylation-seq/workflows/" title="Workflows" alt="DNA Methylation data analysis workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
@@ -609,14 +626,33 @@
             
 
             
+
             
             
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
+
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -626,6 +662,10 @@
             </a>
         </li>
     
+    
+        
+    
+        
     
         
     
@@ -746,17 +786,9 @@
         
     
         
-    
-        
-    
-        
-    
-        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -793,6 +825,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -801,9 +835,13 @@
         </ul>
         
 
-        <div><strong> <i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Apr 25, 2019 </div>
-        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong> Tutorial Content is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> The GTN Framework is <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a></div>
-
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Apr 25, 2019 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
     </blockquote>
 
     <div class="container">
@@ -813,6 +851,8 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
+                
+
                 <blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
 
@@ -830,7 +870,7 @@
 
 </blockquote>
 
-<p>This tutorial is based off of <a class="citation" href="#Lin2015">Lin <i>et al.</i> 2015</a>. The data we use in this tutorial is available at <a href="https://zenodo.org/record/557099">Zenodo</a>.</p>
+<p>This tutorial is based off of <span class="citation"><a href="#Lin2015">Lin <i>et al.</i> 2015</a></span>. The data we use in this tutorial is available at <a href="https://zenodo.org/record/557099">Zenodo</a>.</p>
 
 <h1 id="load-data-and-quality-control">Load data and quality control</h1>
 <blockquote class="notranslate hands_on">
@@ -866,7 +906,7 @@
     <li>
       <p>Go to the web page result page and have a closer look at ‘Per base sequence content’</p>
 
-      <p><img src="../../images/fastqc.png" alt="FastQC webpage results" loading="lazy" /></p>
+      <p><img src="../../images/fastqc.png" alt="FastQC webpage results. " loading="lazy" /></p>
 
       <blockquote class="question">
         <h3 id="question-questions"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -935,7 +975,7 @@ Compute now the alignment. Please notice that depending on your system this comp
         <li>Set the parameters <code class="language-plaintext highlighter-rouge">By default, if only one read in a pair aligns (a singleton) then it's ignored.</code> and <code class="language-plaintext highlighter-rouge">By default, paired-end alignments with the properly-paired bit unset in the FLAG field are ignored. Note that the definition of concordant and discordant is based on your aligner settings.</code> to <code class="language-plaintext highlighter-rouge">Yes</code>.</li>
       </ul>
 
-      <p><img src="../../images/methylation_bias_example_data.png" alt="Methylation bias example" loading="lazy" /></p>
+      <p><img src="../../images/methylation_bias_example_data.png" alt="Methylation bias example. " loading="lazy" /></p>
 
       <blockquote class="question">
         <h3 id="question-questions-2"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -1019,7 +1059,7 @@ Compute now the alignment. Please notice that depending on your system this comp
 
   <p>The output should look like this:</p>
 
-  <p><img src="../../images/methylation_output.png" alt="Methylation output" loading="lazy" /></p>
+  <p><img src="../../images/methylation_output.png" alt="Methylation output. " loading="lazy" /></p>
 
   <p>Lets see how the methylation looks for a few provided files:</p>
   <ol>
@@ -1057,7 +1097,7 @@ Compute now the alignment. Please notice that depending on your system this comp
     <li>Compute the matrix and plot the profile as described above.</li>
   </ol>
 
-  <p><img src="../../images/methyl_level.png" alt="Methylation level around TSS" loading="lazy" /></p>
+  <p><img src="../../images/methyl_level.png" alt="Methylation level around TSS. " loading="lazy" /></p>
 
   <p>More information about deepTools can be found here: https://deeptools.readthedocs.io</p>
 
@@ -1124,23 +1164,15 @@ Compute now the alignment. Please notice that depending on your system this comp
 
                 
                 <h1 id="bibliography">References</h1>
-                <ol class="bibliography"><li><span id="Lin2015">Lin, I.-H., D.-T. Chen, Y.-F. Chang, Y.-L. Lee, C.-H. Su <i>et al.</i>, 2015 <b>Hierarchical Clustering of Breast Cancer Methylomes Revealed Differentially Methylated and Expressed Breast Cancer Genes</b> (O. El-Maarri, Ed.). PLOS ONE 10: e0118453.</span>
-    
-    
-    <a href="https://doi.org/10.1371/journal.pone.0118453">10.1371/journal.pone.0118453</a>
-    
-    
-      <!-- prevent duplicate doi links -->
-      
-    
-
-</li></ol>
+                <ol class="bibliography"><li id="Lin2015">Lin, I.-H., D.-T. Chen, Y.-F. Chang, Y.-L. Lee, C.-H. Su <i>et al.</i>, 2015 <b>Hierarchical Clustering of Breast Cancer Methylomes Revealed Differentially Methylated and Expressed Breast Cancer Genes</b> (O. El-Maarri, Ed.). PLOS ONE 10: e0118453. <a href="https://doi.org/10.1371/journal.pone.0118453">10.1371/journal.pone.0118453</a></li></ol>
                 
 
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />

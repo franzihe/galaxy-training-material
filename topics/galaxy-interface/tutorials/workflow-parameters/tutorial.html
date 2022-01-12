@@ -49,6 +49,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -107,41 +142,6 @@
 
         <div class="dropdown-item">
             <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fworkflow-parameters%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
-
-        <div class="dropdown-item">
-            <div>
                 <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
@@ -196,7 +196,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -226,6 +226,8 @@
 
 
 <!-- Gitter -->
+
+
 
 
 <script>
@@ -274,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Using Workflow Parameters",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -315,6 +314,11 @@
   "timeRequired": "PT30M",
   "keywords": "workflows",
   "description": "The questions this  addresses are:\n - What are Workflow Parameters\n - How can I define and use Workflow Parameters\n - How can I read Parameters from Datasets\n\n\\nThe objectives are:\n - Learn how to use Workflow Parameters to improve your Workflows\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "hasPart": [
 
   ],
@@ -354,16 +358,25 @@
     <h1 data-toc-skip>Using Workflow Parameters</h1>
     
 
-    <div class="contributors-line">By: 
 
- <a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mvdbeek" alt="Avatar">Marius van den Beek</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Avatar">Helena Rasche</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/mvdbeek/" class="contributor-badge contributor-mvdbeek"><img src="https://avatars.githubusercontent.com/mvdbeek?s=27" alt="Avatar">Marius van den Beek</a>
+
+
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
-        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions</strong>
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
         <li><p>What are Workflow Parameters</p>
@@ -377,7 +390,7 @@
         
         </ul>
 
-        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives</strong>
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
         <ul>
         
         <li><p>Learn how to use Workflow Parameters to improve your Workflows</p>
@@ -393,7 +406,10 @@
 
         
         <div><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i> Level: </strong>
-         Intermediate 
+        
+
+
+ Intermediate <span class="visually-hidden">Intermediate</span>
 <span class="level intermediate" title="Intermediate Tutorial">
   <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i>
 </span>
@@ -405,7 +421,7 @@
         
 
         
-        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
 
@@ -413,6 +429,8 @@
 
             
                 <li class="btn btn-default supporting_material">
+
+
     <a class="topic-icon" href="/training-material/topics/galaxy-interface/tutorials/workflow-parameters/workflows/" title="Workflows" alt="Using Workflow Parameters workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
@@ -423,17 +441,38 @@
             
 
             
+
             
             
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
+
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
+    
+        
     
         
     
@@ -488,6 +527,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://africa.usegalaxy.eu/" title="Galaxy Africa">
             Galaxy Africa
         </a>
@@ -497,8 +538,6 @@
         <a class="dropdown-item" href="https://india.usegalaxy.eu/" title="Galaxy India">
             Galaxy India
         </a>
-        
-    
         
     
         
@@ -514,11 +553,15 @@
         
     
         
-        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
-            Galaxy@GenOuest
+        <a class="dropdown-item" href="https://galaxy.mesocentre.uca.fr" title="Galaxy@AuBi">
+            Galaxy@AuBi
         </a>
         
     
+        
+        <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
+            Galaxy@GenOuest
+        </a>
         
     
         
@@ -556,13 +599,9 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://ml.usegalaxy.eu/" title="Machine Learning Workbench">
             Machine Learning Workbench
         </a>
-        
-    
         
     
         
@@ -596,6 +635,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="http://pepsimili.e-nios.com:8080/" title="PepSimili">
             PepSimili
         </a>
@@ -606,12 +647,6 @@
         
         <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
             Plant Anaylsis Workbench
-        </a>
-        
-    
-        
-        <a class="dropdown-item" href="http://www.proteore.org/" title="ProteoRE">
-            ProteoRE
         </a>
         
     
@@ -627,8 +662,6 @@
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -677,6 +710,12 @@
         </a>
         
     
+        
+        <a class="dropdown-item" href="https://covid19.usegalaxy.fr/" title="covid19.UseGalaxy.fr">
+            covid19.UseGalaxy.fr
+        </a>
+        
+    
     </ul>
 
 
@@ -685,9 +724,13 @@
         </ul>
         
 
-        <div><strong> <i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 25, 2021 </div>
-        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong> Tutorial Content is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> The GTN Framework is <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a></div>
-
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 29, 2021 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
     </blockquote>
 
     <div class="container">
@@ -697,6 +740,8 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
+                
+
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
 <p>Workflows are a powerful feature in <span class="notranslate">Galaxy</span> that allow you to chain multiple steps of an analysis together.
@@ -746,7 +791,7 @@ of the select first tool.</p>
 <p>Instead of selecting a specific number of lines we can choose to insert a <span class="notranslate">workflow</span> parameter
 that allows the user to set this parameter when running the <span class="notranslate">workflow</span>.</p>
 
-<figure id="figure-1"><img src="../../images/connection-module.png" alt="Button for selecting connections" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> The new button for creating a <span class="notranslate">workflow</span> parameter connection. When you click this, it will add a new 'input' to the tool that can be connected, just like other tools in workflows.</figcaption></figure>
+<figure id="figure-1"><img src="../../images/connection-module.png" alt="Button for selecting connections. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> The new button for creating a <span class="notranslate">workflow</span> parameter connection. When you click this, it will add a new 'input' to the tool that can be connected, just like other tools in workflows.</figcaption></figure>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-updating-the-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Updating the <span class="notranslate">Workflow</span></h3>
@@ -810,7 +855,7 @@ E. coli UTI89 O18:K1:H7. UPEC)
   <p>Notice the new input that can be changed before the <span class="notranslate">workflow</span> is run</p>
 </blockquote>
 
-<figure id="figure-2"><img src="../../images/workflow_integer_param.gif" alt="Animation of simple integer workflow parameter" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Integer <span class="notranslate">workflow</span> parameter</figcaption></figure>
+<figure id="figure-2"><img src="../../images/workflow_integer_param.gif" alt="Animation of simple integer workflow parameter. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Integer <span class="notranslate">workflow</span> parameter</figcaption></figure>
 
 <blockquote class="tip">
   <h3 id="tip-tip-parameter-reuse"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Parameter Reuse</h3>
@@ -847,7 +892,7 @@ compose this text parameter using the <code class="language-plaintext highlighte
         <li>Add two more “Components” using the “Insert components” button in the <span class="notranslate">workflow</span> editor tool form on the right of the screen. You will need three “Component” blocks in total.</li>
         <li>In the first component:
           <ul>
-            <li><em>“Enter text that should be part of the computed value”</em>: <code class="language-plaintext highlighter-rouge">/(</code></li>
+            <li><em>“Enter text that should be part of the computed value”</em>: <code class="language-plaintext highlighter-rouge">(</code></li>
           </ul>
         </li>
         <li>In the second component:
@@ -858,7 +903,7 @@ compose this text parameter using the <code class="language-plaintext highlighte
         </li>
         <li>In the third component:
           <ul>
-            <li><em>“Enter text that should be part of the computed value”</em>: <code class="language-plaintext highlighter-rouge">)/</code></li>
+            <li><em>“Enter text that should be part of the computed value”</em>: <code class="language-plaintext highlighter-rouge">)</code></li>
           </ul>
         </li>
       </ul>
@@ -1045,7 +1090,9 @@ parameters from datasets!</p>
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1098,8 +1145,8 @@ parameters from datasets!</p>
 author = "Marius van den Beek and Helena Rasche",
 title = "Using Workflow Parameters (Galaxy Training Materials)",
 year = "2021",
-month = "03",
-day = "25"
+month = "09",
+day = "29"
 url = "\url{https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }

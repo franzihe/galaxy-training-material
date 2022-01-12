@@ -47,8 +47,44 @@
                         <a class="nav-link" href="/training-material/hall-of-fame" title="Hall of Fame">
                            <i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span> Contributors
                         </a>
+
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -100,41 +136,6 @@
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
             </a>
         
-
-        <div class="dropdown-item">
-            <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/faqs/galaxy/&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2F%2Ftutorials%2F%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
 
         <div class="dropdown-item">
             <div>
@@ -192,7 +193,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -211,9 +212,12 @@
         <div class="container main-content" role="main">
         
 
+
+
 <section class="tutorial faqs">
     <h1 data-toc-skip>Frequently Asked Questions</h1>
-
+<div class="contributors-line">Authors: 
+    </div>
     <div class="container">
         <div class="row">
             <!-- sidebar, which will move to the top on a small screen -->
@@ -315,7 +319,7 @@ To get access to all features of a <span class="notranslate">Galaxy</span> insta
 
 <h3 class="faq-area"> Importing data from a data library <a href="/training-material/faqs/galaxy/datasets_import_from_data_library.html"><i class="fas fa-external-link-alt"></i></a> </h3>
 
-<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
 
 
 
@@ -365,7 +369,7 @@ Tags can help you to better organize your history and track datasets.
 
 <h3 class="faq-area"> Changing the datatype <a href="/training-material/faqs/galaxy/datasets_change_datatype.html"><i class="fas fa-external-link-alt"></i></a> </h3>
 <span class="notranslate">Galaxy</span> will try to autodetect the datatype of your files, but you may need to manually set this occasionally.
-<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select  your desired datatype</li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
+<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select  your desired datatype</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
 
 
 
@@ -448,6 +452,15 @@ Some datasets can be transformed into a different format. <span class="notransla
 
 
 
+
+<h3 class="faq-area"> Why not use Excel? <a href="/training-material/faqs/galaxy/why_not_excel.html"><i class="fas fa-external-link-alt"></i></a> </h3>
+Excel is a fantastic tool and a great place to build simple analysis models, but when it comes to scaling, <span class="notranslate">Galaxy</span> wins every time.
+<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-why-not-use-excel"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Why not use Excel?</h3>  <p>You could just as easily use Excel to answer the same question, and if the goal is to learn how to use a tool, then either tool would be great! But what if you are working on a question where your analysis matters? Maybe you are working with human clinical data trying to diagnose a set of symptoms, or you are working on research that will eventually be published and maybe earn you a Nobel Prize?</p>  <p>In these cases your analysis, <em>and the ability to reproduce it exactly</em>, is vitally important, and Excel won’t help you here. It doesn’t track changes and it offers very little insight to others on how you got from your initial data to your conclusions.</p>  <p><span class="notranslate">Galaxy</span>, on the other hand, <em>automatically records every step of your analysis.</em> And when you are done, you can share your analysis with anyone. You can even include a link to it in a paper (or your acceptance speech). In addition, you can create a reusable <span class="notranslate">workflow</span> from your analysis that others (or yourself) can use on other datasets.</p>  <p>Another challenge with sp<span class="notranslate">reads</span>heet programs is that they don’t scale to support <em>next generation sequencing (NGS)</em> datasets, a common type of data in genomics, and which often reach gigabytes or even terabytes in size. Excel has been used for large datasets, but you’ll often find that learning a new tool gives you significantly more ability to scale up, and scale out your analyses.</p></blockquote>
+
+
+
+
+
  <br><br> 
 <h2 id="histories"> <a href="#histories"> Histories </a></h2>
 <hr/>
@@ -507,6 +520,15 @@ You can share your work in <span class="notranslate">Galaxy</span>. There are va
 
 
 
+
+<h3 class="faq-area"> Undeleting history <a href="/training-material/faqs/galaxy/histories_undelete.html"><i class="fas fa-external-link-alt"></i></a> </h3>
+undelete your deleted histories
+<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-undeleting-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Undeleting history</h3>  <ul>  <li>Click on <strong>User</strong> then select <strong>Histories</strong></li>  <li>Click on <strong>Advanced search</strong> on the top left side below  <strong>Saved Histories</strong></li>  <li>On <strong>Status</strong> click <strong>Deleted</strong></li>  <li>Select the history you want to undelete using the <strong>checkbox</strong> on the left side</li>  <li>Click <strong>Undelete</strong> button below the deleted histories</li></ul></blockquote>
+
+
+
+
+
  <br><br> 
 <h2 id="interactive tools"> <a href="#interactive tools"> Interactive tools </a></h2>
 <hr/>
@@ -516,6 +538,15 @@ You can share your work in <span class="notranslate">Galaxy</span>. There are va
 <h3 class="faq-area"> Launch JupyterLab <a href="/training-material/faqs/galaxy/interactive_tools_jupyter_launch.html"><i class="fas fa-external-link-alt"></i></a> </h3>
 
 <!--SNIPPET--><blockquote class="notranslate hands_on">  <h3 data-toc-skip id="-hands-on-launch-jupyterlab"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Launch JupyterLab</h3>  <blockquote class="tip">  <h3 data-toc-skip id="tip-tip-launch-jupyterlab-in-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch JupyterLab in <span class="notranslate">Galaxy</span></h3>  <p>Currently JupyterLab in <span class="notranslate">Galaxy</span> is available on <a href="https://live.usegalaxy.eu">Live.use<span class="notranslate">Galaxy</span>.eu</a>, <a href="https://usegalaxy.org">use<span class="notranslate">galaxy</span>.org</a> and <a href="https://usegalaxy.eu">use<span class="notranslate">galaxy</span>.eu</a>.</p>  <blockquote class="notranslate hands_on">    <h3 data-toc-skip id="hands_on-hands-on-run-jupyterlab"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run JupyterLab</h3>    <ol>      <li><span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>Interactive Jupyter Notebook</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span> :</li>      <li>Click Execute</li>      <li>The tool will start running and will stay running permanently</li>      <li>Click on the <strong>User</strong> menu at the top and go to <strong>Active Interactive Tools</strong> and locate the JupyterLab instance you started.</li>      <li>Click on your JupyterLab instance</li>    </ol>  </blockquote></blockquote>  <blockquote class="tip">  <h3 data-toc-skip id="tip-tip-launch-try-jupyterlab-if-not-available-on-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch Try JupyterLab if not available on <span class="notranslate">Galaxy</span></h3>  <p>If JupyterLab is not available on the <span class="notranslate">Galaxy</span> instance:</p>  <ol>    <li>Start <a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab">Try JupyterLab</a></li>  </ol></blockquote></blockquote>
+
+
+
+
+
+
+<h3 class="faq-area"> Open a Terminal in Jupyter <a href="/training-material/faqs/galaxy/interactive_tools_jupyter_terminal.html"><i class="fas fa-external-link-alt"></i></a> </h3>
+
+<!--SNIPPET--><blockquote class="notranslate hands_on">  <h3 data-toc-skip id="-hands-on-open-a-terminal-in-jupyter"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Open a Terminal in Jupyter</h3>  <p>This tutorial will let you accomplish almost everything from this view, running code in the cells below directly in the training material. You can choose between running the code here, or opening up a terminal tab in which to run it.Here are some instructions for how to do this on various environments.</p>  <p><strong>Jupyter</strong> on Use<span class="notranslate">Galaxy</span>.* and <strong>MyBinder.org</strong></p>  <ol>  <li>    <p>Use the File → New → Terminal menu to launch a terminal.</p>    <p><img src="/training-material/topics/data-science/images/carpentries-cli/mybinder-launch.png" alt="screenshot of jupyterlab showing the File menu expanded to show new and terminal option." /></p>  </li>  <li>    <p>Disable “Simple” mode in the bottom left hand corner, if it activated.</p>    <p><img src="/training-material/topics/data-science/images/carpentries-cli/mybinder-simple.png" alt="screenshot of jupyterlab showing a toggle labelled simple" /></p>  </li>  <li>    <p>Drag one of the terminal or notebook tabs to the side to have the training materials and terminal side-by-side</p>    <p><img src="/training-material/topics/data-science/images/carpentries-cli/mybinder-final.png" alt="screenshot of jupyterlab with notebook and terminal side-by-side." /></p>  </li></ol>  <p><strong>CoCalc</strong></p>  <ol>  <li>    <p>Use the <em>Split View</em> functionality of cocalc to split your view into two portions.</p>    <p><img src="/training-material/topics/data-science/images/carpentries-cli/cocalc-split.png" alt="screenshot of cocalc button to split views" /></p>  </li>  <li>    <p>Change the view of one panel to a terminal</p>    <p><img src="/training-material/topics/data-science/images/carpentries-cli/cocalc-terminal.png" alt="screenshot of cocalc swapping view port to that of a terminal" /></p>  </li></ol></blockquote>
 
 
 
@@ -652,7 +683,7 @@ You can create a <span class="notranslate">Galaxy</span> <span class="notranslat
 
 <h3 class="faq-area"> Extracting a <span class="notranslate">workflow</span> from your history <a href="/training-material/faqs/galaxy/workflows_extract_from_history.html"><i class="fas fa-external-link-alt"></i></a> </h3>
 <span class="notranslate">Galaxy</span> can automatically create a <span class="notranslate">workflow</span> based on the analysis you have performed in a history. This means that once you have done an analysis manually once, you can easily extract a <span class="notranslate">workflow</span> to repeat it on different data.
-<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-extracting-a-workflow-from-your-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Extracting a <span class="notranslate">workflow</span> from your history</h3>  <ol>  <li>Remove any failed or unwanted jobs from your history.</li>  <li>Click on <strong>History options</strong> (gear icon <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span>) at the top of your history panel.</li>  <li>Select <strong>Extract <span class="notranslate">workflow</span></strong></li>  <li>Check the steps, enter a name for your <span class="notranslate">workflow</span>, and press the <strong>Create <span class="notranslate">Workflow</span></strong> button.</li></ol></blockquote>
+<!--SNIPPET--><blockquote class="tip">  <h3 data-toc-skip id="-tip-extracting-a-workflow-from-your-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Extracting a <span class="notranslate">workflow</span> from your history</h3>  <ol>  <li>    <p><strong>Clean up</strong> your history: remove any failed (red) jobs from your history by clicking on the <i class="fas fa-times" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-cross</span> button.</p>    <p>This will make the creation of the <span class="notranslate">workflow</span> easier.</p>  </li>  <li>    <p>Click on <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> (<strong>History options</strong>) at the top of your history panel and select <strong>Extract <span class="notranslate">workflow</span></strong>.</p>    <p><img src="/training-material/topics/introduction/images/history_menu_extract_workflow.png" alt="`Extract Workflow` entry in the history options menu" /></p>    <p>The central panel will show the content of the history in reverse order (oldest on top), and you will be able to choose which steps to include in the <span class="notranslate">workflow</span>.</p>  </li>  <li>    <p>Replace the <strong><span class="notranslate">Workflow</span> name</strong> to something more descriptive.</p>  </li>  <li>    <p><strong>Rename</strong> each <span class="notranslate">workflow</span> input in the boxes at the top of the second column.</p>  </li>  <li>    <p>If there are any steps that shouldn’t be included in the <span class="notranslate">workflow</span>, you can <strong>uncheck</strong> them in the first column of boxes.</p>  </li>  <li>    <p>Click on the <strong>Create <span class="notranslate">Workflow</span></strong> button near the top.</p>    <p>You will get a message that the <span class="notranslate">workflow</span> was created.</p>  </li></ol></blockquote>
 
 
 
@@ -749,7 +780,7 @@ When creating a <span class="notranslate">workflow</span> in <span class="notran
         <p>
 The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/0d68e994762d5236732ad872fddef778bcee18cd">0d68e994762d5236732ad872fddef778bcee18cd</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/4359150a5441986af908a103f8a9ad0dce84e418">4359150a5441986af908a103f8a9ad0dce84e418</a></p>
     </div>
 </footer>
 

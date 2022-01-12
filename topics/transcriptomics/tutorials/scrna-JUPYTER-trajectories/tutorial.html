@@ -49,6 +49,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -107,41 +142,6 @@
 
         <div class="dropdown-item">
             <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-JUPYTER-trajectories%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
-
-        <div class="dropdown-item">
-            <div>
                 <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
@@ -196,7 +196,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -226,6 +226,8 @@
 
 
 <!-- Gitter -->
+
+
 
 
 <script>
@@ -274,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Trajectory Analysis using Python (Jupyter Notebook) in Galaxy",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -313,8 +312,13 @@
   "name": "Hands-on for 'Trajectory Analysis using Python (Jupyter Notebook) in Galaxy' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html",
   "timeRequired": "PT2H",
-  "keywords": "single-cell, 10x, paper-replication",
+  "keywords": "single-cell, 10x, paper-replication, interactive-tools",
   "description": "The questions this  addresses are:\n - How can I infer lineage relationships between single cells based on their RNA, without a time series?\n\n\\nThe objectives are:\n - Execute multiple plotting methods designed to maintain lineage relationships between cells\n - Interpret these plots\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "CreativeWork",
@@ -500,16 +504,25 @@
     <h1 data-toc-skip>Trajectory Analysis using Python (Jupyter Notebook) in Galaxy</h1>
     
 
-    <div class="contributors-line">By: 
 
- <a href="/training-material/hall-of-fame/nomadscientist/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/nomadscientist" alt="Avatar">Wendi Bacon</a> <a href="/training-material/hall-of-fame/mtekman/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mtekman" alt="Avatar">Mehmet Tekman</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/nomadscientist/" class="contributor-badge contributor-nomadscientist"><img src="https://avatars.githubusercontent.com/nomadscientist?s=27" alt="Avatar">Wendi Bacon</a>
+
+
+<a href="/training-material/hall-of-fame/mtekman/" class="contributor-badge contributor-mtekman"><img src="https://avatars.githubusercontent.com/mtekman?s=27" alt="Avatar">Mehmet Tekman</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
-        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions</strong>
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
         <li><p>How can I infer lineage relationships between single cells based on their RNA, without a time series?</p>
@@ -517,7 +530,7 @@
         
         </ul>
 
-        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives</strong>
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
         <ul>
         
         <li><p>Execute multiple plotting methods designed to maintain lineage relationships between cells</p>
@@ -529,7 +542,7 @@
         </ul>
 
         
-        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements</strong>
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
         <ul>
         
     <li>
@@ -631,6 +644,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Generating a single cell matrix using Alevin:
                             
@@ -640,6 +655,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -703,6 +720,8 @@
                         
                     
                         
+                    
+                        
                             
                             <li> Filter, Plot and Explore Single-cell RNA-seq Data:
                             
@@ -712,6 +731,8 @@
                                 
                             
                             </li>
+                        
+                    
                         
                     
                         
@@ -836,16 +857,18 @@
         
 
         
-        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/transcriptomics/slides/introduction.html">
+                <li class="btn btn-default supporting_material"><a href="/training-material/topics/transcriptomics/slides/introduction.html" title="Topic Overview slides">
                     <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
                 </a></li>
             
 
             
                 <li class="btn btn-default supporting_material">
+
+
 <a class="topic-icon" href="https://zenodo.org/record/4726927">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
@@ -858,14 +881,51 @@
             
 
             
+
             
             
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+  
+  <li class="btn btn-default supporting_material">
+    <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Video Library for these Training Materials">
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> GTN Video Library
+    </a>
+    <ul class="dropdown-menu">
+        
+        
+        <li>
+            <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/transcriptomics/scrna-JUPYTER-trajectories/tutorial" title="View GTN Video Library for this Tutorial">
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial
+            </a>
+        </li>
+        
+        
+        
+    </ul>
+   </li>
+   
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
+
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -884,9 +944,13 @@
         </ul>
         
 
-        <div><strong> <i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 27, 2021 </div>
-        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong> Tutorial Content is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> The GTN Framework is <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a></div>
-
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Sep 2, 2021 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
     </blockquote>
 
     <div class="container">
@@ -896,6 +960,8 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
+                
+
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
 <p>You’ve done all the hard work of preparing a <span class="notranslate">single cell</span> matrix, processing it, plotting it, interpreting it, finding lots of lovely genes, all within the glorious <span class="notranslate">Galaxy</span> interface. Now you want to infer trajectories, or relationships between cells… and you’ve been threatened with learning Python to do so! Well, fear not. If you can have a run-through of a basic python coding introduction such as <a href="https://www.w3schools.com/python/">this one</a>, then that will help you make more sense of this tutorial, however you’ll be able to make and interpret glorious plots even without understanding the Python coding language. This is the beauty of <span class="notranslate">Galaxy</span> - all the ‘set-up’ is identical across computers, because it’s browser based. So fear not!</p>
@@ -922,7 +988,7 @@
 
 <h2 id="get-data">Get data</h2>
 
-<p>We’ve provided you with experimental data to analyse from a mouse dataset of fetal growth restriction <a class="citation" href="#Bacon2018">Bacon <i>et al.</i> 2018</a>. This is the full dataset generated from <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html#neighborhood-graph">this tutorial</a> (see the study in <span class="notranslate">Single Cell</span> <span class="notranslate">Expression</span> Atlas <a href="https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-6945/results/tsne">here</a> and the project submission <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6945/">here</a>). You can find the final dataset in this <a href="https://humancellatlas.usegalaxy.eu/u/wendi.bacon.training/h/trajectories---input">input history</a> or download from Zenodo below.</p>
+<p>We’ve provided you with experimental data to analyse from a mouse dataset of fetal growth restriction <span class="citation"><a href="#Bacon2018">Bacon <i>et al.</i> 2018</a></span>. This is the full dataset generated from <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-seq-basic-pipeline/tutorial.html#neighborhood-graph">this tutorial</a> (see the study in <span class="notranslate">Single Cell</span> <span class="notranslate">Expression</span> Atlas <a href="https://www.ebi.ac.uk/gxa/sc/experiments/E-MTAB-6945/results/tsne">here</a> and the project submission <a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6945/">here</a>). You can find the final dataset in this <a href="https://humancellatlas.usegalaxy.eu/u/wendi.bacon.training/h/trajectories---input">input history</a> or download from Zenodo below.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
@@ -949,7 +1015,7 @@ https://zenodo.org/record/4726927/files/Final_cell_annotated_object.h5ad
       <p>Check that the datatype is <code class="language-plaintext highlighter-rouge">h5ad</code></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">h5ad</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">h5ad</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li>
       <p><strong>Rename</strong> <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> the .ipynb object as <code class="language-plaintext highlighter-rouge">Trajectories_Instructions.ipynb</code></p>
@@ -1049,7 +1115,7 @@ https://zenodo.org/record/4726927/files/Final_cell_annotated_object.h5ad
     <li>Click the <strong>Python 3</strong> icon under <strong>Notebook</strong></li>
   </ol>
 
-  <figure id="figure-1"><img src="../../images/wab-python3logo.png" alt="Python 3 icon" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Python 3 Button</figcaption></figure>
+  <figure id="figure-1"><img src="../../images/wab-python3logo.png" alt="Python 3 icon. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Python 3 Button</figcaption></figure>
 
   <ol>
     <li>
@@ -1091,19 +1157,19 @@ https://zenodo.org/record/4726927/files/Final_cell_annotated_object.h5ad
 
 <p>Just in case, we’ve put the plots you should generate in the tutorial here. If things have gone wrong, you can also download this <a href="https://zenodo.org/record/4726927/files/Trajectories_AnswerKey.ipynb">answer key tutorial</a>.</p>
 
-<figure id="figure-2"><img src="../../images/wab-Plot1.png" alt="Plot1-Force-Directed Graph" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Plot1-Force-Directed Graph</figcaption></figure>
+<figure id="figure-2"><img src="../../images/wab-Plot1.png" alt="Plot1-Force-Directed Graph. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Plot1-Force-Directed Graph</figcaption></figure>
 
-<figure id="figure-3"><img src="../../images/wab-Plot2.png" alt="Diffusion Map" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Diffusion Map</figcaption></figure>
+<figure id="figure-3"><img src="../../images/wab-Plot2.png" alt="Diffusion Map. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Diffusion Map</figcaption></figure>
 
-<figure id="figure-4"><img src="../../images/wab-Plot3.png" alt="PAGA" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> PAGA</figcaption></figure>
+<figure id="figure-4"><img src="../../images/wab-Plot3.png" alt="PAGA. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> PAGA</figcaption></figure>
 
-<figure id="figure-5"><img src="../../images/wab-Plot4.png" alt="Force-Directed + PAGA - Cell type" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Force-Directed + PAGA - Cell type</figcaption></figure>
+<figure id="figure-5"><img src="../../images/wab-Plot4.png" alt="Force-Directed + PAGA - Cell type. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Force-Directed + PAGA - Cell type</figcaption></figure>
 
-<figure id="figure-6"><img src="../../images/wab-Plot5.png" alt="Force-Directed + PAGA - Genotype" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Force-Directed + PAGA - Genotype</figcaption></figure>
+<figure id="figure-6"><img src="../../images/wab-Plot5.png" alt="Force-Directed + PAGA - Genotype. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 6:</span> Force-Directed + PAGA - Genotype</figcaption></figure>
 
-<figure id="figure-7"><img src="../../images/wab-Plot6.png" alt="Force-Directed + PAGA - Markers" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Force-Directed + PAGA - Markers</figcaption></figure>
+<figure id="figure-7"><img src="../../images/wab-Plot6.png" alt="Force-Directed + PAGA - Markers. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 7:</span> Force-Directed + PAGA - Markers</figcaption></figure>
 
-<figure id="figure-8"><img src="../../images/wab-Plot7.png" alt="Force-Directed + Pseudotime" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Force-Directed + Pseudotime</figcaption></figure>
+<figure id="figure-8"><img src="../../images/wab-Plot7.png" alt="Force-Directed + Pseudotime. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 8:</span> Force-Directed + Pseudotime</figcaption></figure>
 
 <h1 id="after-jupyter">After Jupyter</h1>
 
@@ -1132,7 +1198,7 @@ https://zenodo.org/record/4726927/files/Final_cell_annotated_object.h5ad
 <p>In this tutorial, you moved from called clusters to inferred relationships and trajectories using pseudotime analysis. You found an alte<span class="notranslate">rna</span>tive to PCA (diffusion map), an alte<span class="notranslate">rna</span>tive to tSNE (force-directed graph), a means of identifying cluster relationships (PAGA), and a metric for pseudotime (diffusion pseudotime) to identify early and late cells. If you were working in a group, you found that such analysis is slightly more sensitive to your decisions than the simpler filtering/plotting/clustering is. We are inferring and assuming relationships and time, so that makes sense!</p>
 
 <p>To discuss with like-minded scientists, join our Gitter channel for all things <span class="notranslate">Galaxy</span>-<span class="notranslate">single cell</span>!
-<a href="https://gitter.im/Galaxy-Training-Network/galaxy-single-cell?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Galaxy-Training-Network/galaxy-single-cell.svg" alt="Gitter" loading="lazy" /></a></p>
+<a href="https://gitter.im/Galaxy-Training-Network/galaxy-single-cell?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Galaxy-Training-Network/galaxy-single-cell.svg" alt="Gitter. " loading="lazy" /></a></p>
 
 
                 
@@ -1162,23 +1228,15 @@ https://zenodo.org/record/4726927/files/Final_cell_annotated_object.h5ad
 
                 
                 <h1 id="bibliography">References</h1>
-                <ol class="bibliography"><li><span id="Bacon2018">Bacon, W. A., R. S. Hamilton, Z. Yu, J. Kieckbusch, D. Hawkes <i>et al.</i>, 2018 <b>Single-Cell Analysis Identifies Thymic Maturation Delay in Growth-Restricted Neonatal Mice</b>. Frontiers in Immunology 9:</span>
-    
-    
-    <a href="https://doi.org/10.3389/fimmu.2018.02523">10.3389/fimmu.2018.02523</a>
-    
-    
-      <!-- prevent duplicate doi links -->
-      
-    
-
-</li></ol>
+                <ol class="bibliography"><li id="Bacon2018">Bacon, W. A., R. S. Hamilton, Z. Yu, J. Kieckbusch, D. Hawkes <i>et al.</i>, 2018 <b>Single-Cell Analysis Identifies Thymic Maturation Delay in Growth-Restricted Neonatal Mice</b>. Frontiers in Immunology 9: <a href="https://doi.org/10.3389/fimmu.2018.02523">10.3389/fimmu.2018.02523</a></li></ol>
                 
 
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1231,8 +1289,8 @@ https://zenodo.org/record/4726927/files/Final_cell_annotated_object.h5ad
 author = "Wendi Bacon and Mehmet Tekman",
 title = "Trajectory Analysis using Python (Jupyter Notebook) in Galaxy (Galaxy Training Materials)",
 year = "2021",
-month = "05",
-day = "27"
+month = "09",
+day = "02"
 url = "\url{https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-JUPYTER-trajectories/tutorial.html}",
 note = "[Online; accessed TODAY]"
 }

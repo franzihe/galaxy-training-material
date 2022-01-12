@@ -49,6 +49,41 @@
                         </a>
                         
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
+                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            
+                              <strong class="dropdown-header">Automatic Translations</strong>
+            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
+                            Français
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
+                            日本語
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
+                            Español
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
+                            Português
+                            </a>
+                            
+            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
+                            العربية
+                            </a>
+                            
+                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url" title="">
+                            And more!
+                            </a>
+                        </div>
+                    </li>
+
                     <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
@@ -107,41 +142,6 @@
 
         <div class="dropdown-item">
             <div>
-                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
-            </div>
-
-            <div id="lang-selector">
-                
-                <strong>Automatic Translations</strong>
-
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
-                Français
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
-                日本語
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
-                Español
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
-                Português
-                </a>
-                
-<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/metaquantome-taxonomy/tutorial.html&edit-text=&act=url">
-                العربية
-                </a>
-                
-                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fmetaquantome-taxonomy%2Ftutorial.html&edit-text=&act=url" title="">
-                And more!
-                </a>
-            </div>
-        </div>
-
-        <div class="dropdown-item">
-            <div>
                 <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
@@ -196,7 +196,7 @@
 
                     <!-- Search bar-->
                     <li class="nav-item">
-                      <div id="navbarSupportedContent">
+                      <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
                         <form class="form-inline mr-auto" method="GET" action="/training-material/search">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
@@ -226,6 +226,8 @@
 
 
 <!-- Gitter -->
+
+
 
 
 <script>
@@ -274,16 +276,13 @@
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
+  "dateModified": "1970-01-01 00:33:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "metaQuantome 3: Taxonomy",
-  "inLanguage": {
-    "@type": "Language",
-    "name": "English",
-    "alternateName": "en"
-  },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
+  "isFamilyFriendly": true,
+  "license": "https://spdx.org/licenses/CC-BY-4.0.html",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -315,6 +314,11 @@
   "timeRequired": "PT1H",
   "keywords": "microbiome",
   "description": "The questions this  addresses are:\n - How do I look at differentially expressed taxa?\n - Can we get top 5 or 10 taxa present in the sample?\n - How can I visualize my results?\n\n\\nThe objectives are:\n - A taxonomy and quantitational analysis of metaproteomic mass spectrometry data.\n\n",
+  "inLanguage": {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en"
+  },
   "coursePrerequisites": [
     {
       "@type": "CreativeWork",
@@ -421,16 +425,37 @@
     <h1 data-toc-skip>metaQuantome 3: Taxonomy</h1>
     
 
-    <div class="contributors-line">By: 
 
- <a href="/training-material/hall-of-fame/subinamehta/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/subinamehta" alt="Avatar">Subina Mehta</a> <a href="/training-material/hall-of-fame/timothygriffin/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/timothygriffin" alt="Avatar">Timothy J. Griffin</a> <a href="/training-material/hall-of-fame/pratikdjagtap/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/pratikdjagtap" alt="Avatar">Pratik Jagtap</a> <a href="/training-material/hall-of-fame/emmaleith/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/emmaleith" alt="Avatar">Emma Leith</a> <a href="/training-material/hall-of-fame/mariecrane/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/mariecrane" alt="Avatar">Marie Crane</a> <a href="/training-material/hall-of-fame/pravs3683/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/pravs3683" alt="Avatar">Praveen Kumar</a>
+    <div class="contributors-line">Authors: 
+<a href="/training-material/hall-of-fame/subinamehta/" class="contributor-badge contributor-subinamehta"><img src="https://avatars.githubusercontent.com/subinamehta?s=27" alt="Avatar">Subina Mehta</a>
+
+
+<a href="/training-material/hall-of-fame/timothygriffin/" class="contributor-badge contributor-timothygriffin"><img src="https://avatars.githubusercontent.com/timothygriffin?s=27" alt="Avatar">Timothy J. Griffin</a>
+
+
+<a href="/training-material/hall-of-fame/pratikdjagtap/" class="contributor-badge contributor-pratikdjagtap"><img src="https://avatars.githubusercontent.com/pratikdjagtap?s=27" alt="Avatar">Pratik Jagtap</a>
+
+
+<a href="/training-material/hall-of-fame/emmaleith/" class="contributor-badge contributor-emmaleith"><img src="https://avatars.githubusercontent.com/emmaleith?s=27" alt="Avatar">Emma Leith</a>
+
+
+<a href="/training-material/hall-of-fame/mariecrane/" class="contributor-badge contributor-mariecrane"><img src="https://avatars.githubusercontent.com/mariecrane?s=27" alt="Avatar">Marie Crane</a>
+
+
+<a href="/training-material/hall-of-fame/pravs3683/" class="contributor-badge contributor-pravs3683"><img src="https://avatars.githubusercontent.com/pravs3683?s=27" alt="Avatar">Praveen Kumar</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
+
     <blockquote class="overview">
         <h3>Overview</h3>
+        
         <img alt="Creative Commons License" class="float-right" style="border-width:0; display: inline-block; margin:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" aria-hidden="true" />
-        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions</strong>
+        
+        <strong><i class="far fa-question-circle" aria-hidden="true"></i> Questions:</strong>
         <ul>
         
         <li><p>How do I look at differentially expressed taxa?</p>
@@ -444,7 +469,7 @@
         
         </ul>
 
-        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives</strong>
+        <strong><i class="fas fa-bullseye" aria-hidden="true"></i> Objectives: </strong>
         <ul>
         
         <li><p>A taxonomy and quantitational analysis of metaproteomic mass spectrometry data.</p>
@@ -453,7 +478,7 @@
         </ul>
 
         
-        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements</strong>
+        <strong><i class="fas fa-check-circle" aria-hidden="true"></i> Requirements:</strong>
         <ul>
         
     <li>
@@ -474,6 +499,8 @@
         
             <ul>
                 
+                    
+                        
                     
                         
                     
@@ -552,7 +579,10 @@
 
         
         <div><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i> Level: </strong>
-         Intermediate 
+        
+
+
+ Intermediate <span class="visually-hidden">Intermediate</span>
 <span class="level intermediate" title="Intermediate Tutorial">
   <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i> <i class="fas fa-graduation-cap" aria-hidden="true"></i>
 </span>
@@ -564,16 +594,18 @@
         
 
         
-        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
+        <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials:</strong></div>
         <ul class="supporting_material">
             
-                <li class="btn btn-default supporting_material"><a href="/training-material/topics/proteomics/slides/introduction.html">
+                <li class="btn btn-default supporting_material"><a href="/training-material/topics/proteomics/slides/introduction.html" title="Topic Overview slides">
                     <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
                 </a></li>
             
 
             
                 <li class="btn btn-default supporting_material">
+
+
 <a class="topic-icon" href="https://doi.org/10.5281/zenodo.4110725">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
@@ -583,6 +615,8 @@
 
             
                 <li class="btn btn-default supporting_material">
+
+
     <a class="topic-icon" href="/training-material/topics/proteomics/tutorials/metaquantome-taxonomy/workflows/" title="Workflows" alt="metaQuantome 3: Taxonomy workflows">
         <i class="fas fa-share-alt" aria-hidden="true"></i> Workflows
     </a>
@@ -593,14 +627,33 @@
             
 
             
+
             
             
+            
+
+            <!-- Check the GTN Video Library for recordings of this tutorial or associated slides -->
+            
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
             
                 <li class="btn btn-default supporting_material">
 
+
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
-        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies
+        <i class="fas fa-globe" aria-hidden="true"></i><span class="visually-hidden">instances</span> Available on these Galaxies 
     </a>
     <ul class="dropdown-menu">
     
@@ -610,6 +663,10 @@
             </a>
         </li>
     
+    
+        
+    
+        
     
         
     
@@ -712,12 +769,6 @@
         
     
         
-    
-        
-    
-        
-    
-        
         <a class="dropdown-item" href="http://galaxy.migale.inra.fr/" title="Migale">
             Migale
         </a>
@@ -743,8 +794,6 @@
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
-        
-    
         
     
         
@@ -781,6 +830,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -789,9 +840,13 @@
         </ul>
         
 
-        <div><strong> <i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 31, 2021 </div>
-        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong> Tutorial Content is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> The GTN Framework is <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a></div>
-
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 31, 2021 </div>
+        <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
+            
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
+            
+            <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">The GTN Framework is licensed under MIT</a>
+        </div>
     </blockquote>
 
     <div class="container">
@@ -801,15 +856,17 @@
                 <nav id="toc" data-toggle="toc" class="sticky-top" aria-label="Table of Contents"></nav>
             </div>
             <div class="col-sm-10">
+                
+
                 <h1 class="no_toc" id="introduction">Introduction</h1>
 
-<p>metaQuantome software suite <a class="citation" href="#Easterly2019">Easterly <i>et al.</i> 2019</a> was developed by the <a class="citation" href="#Galaxy-P">Team</a> for quantitative and statistical analysis of metaproteomics data. For taxonomic and functional <span class="notranslate">expression</span> analysis within the microbial community, metaQuantome leverages peptide-level quantitative information to generate visual outputs for data interpretation. It also generates outputs that help in understanding the taxonomic contribution to a selected function as well as functions expressed by selected taxonomic group.</p>
+<p>metaQuantome software suite <span class="citation"><a href="#Easterly2019">Easterly <i>et al.</i> 2019</a></span> was developed by the <span class="citation"><a href="#Galaxy-P">Team</a></span> for quantitative and statistical analysis of metaproteomics data. For taxonomic and functional <span class="notranslate">expression</span> analysis within the microbial community, metaQuantome leverages peptide-level quantitative information to generate visual outputs for data interpretation. It also generates outputs that help in understanding the taxonomic contribution to a selected function as well as functions expressed by selected taxonomic group.</p>
 
 <p>In this tutorial, we will learn specifically about the metaQuantome Taxonomy <span class="notranslate">workflow</span>. In particular, we will learn about how peptide-level quantitation and associated taxonomic information can be used to generate bar plots (for taxonomic composition), volcano plots (to detect differentially expressed taxa) and heatmap cluster analysis.</p>
 
-<p>To demonstrate the use of this <span class="notranslate">workflow</span>, we have used a thermophilic biogas reactor dataset wherein municipal food waste and manure is digested to generate methane gas (<a class="citation" href="#Delogu2020">Delogu <i>et al.</i> 2020</a>). After one round in the reactor, the microbial community was simplified and enriched via serial dilution. This inoculum was then transferred to a solution of cellulose from Norwegian Spruce and incubated at 65°C. Triplicate samples were taken in a time series from 0 to 43 hours after inoculation and mass spectrometry data was acquired on a Q-Exactive (Thermo) mass spectrometer. For this training, we have chosen three time points (8 hours, 18 hours and 33 hours) from this dataset.</p>
+<p>To demonstrate the use of this <span class="notranslate">workflow</span>, we have used a thermophilic biogas reactor dataset wherein municipal food waste and manure is digested to generate methane gas (<span class="citation"><a href="#Delogu2020">Delogu <i>et al.</i> 2020</a></span>). After one round in the reactor, the microbial community was simplified and enriched via serial dilution. This inoculum was then transferred to a solution of cellulose from Norwegian Spruce and incubated at 65°C. Triplicate samples were taken in a time series from 0 to 43 hours after inoculation and mass spectrometry data was acquired on a Q-Exactive (Thermo) mass spectrometer. For this training, we have chosen three time points (8 hours, 18 hours and 33 hours) from this dataset.</p>
 
-<p><img src="../../images/mQ-taxa-workflow.jpg" alt="MetaQuantome-taxonomy-workflow" width="100%" loading="lazy" /></p>
+<p><img src="../../images/mQ-taxa-workflow.jpg" alt="MetaQuantome-taxonomy-workflow. " width="100%" loading="lazy" /></p>
 
 <blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
@@ -869,7 +926,7 @@ https://zenodo.org/record/4110725/files/Taxonomy-File.tabular
       <p>Alte<span class="notranslate">rna</span>tively, import the files from the shared data library (<code class="language-plaintext highlighter-rouge">GTN - Material</code> -&gt; <code class="language-plaintext highlighter-rouge">proteomics</code> -&gt; <code class="language-plaintext highlighter-rouge">metaQuantome 3: Taxonomy</code>)</p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>  <li>Navigate to the correct folder as indicated by your instructor</li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
     </li>
   </ol>
 
@@ -1085,7 +1142,7 @@ In taxonomy mode, the following information is required apart from metaQuantome 
       <blockquote class="comment">
         <h3 id="comment-comment-2"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
 
-        <p>To learn more about the filter module please read the metaQuantome paper published by <span class="notranslate">Galaxy</span>-P <a class="citation" href="#Easterly2019">Easterly <i>et al.</i> 2019</a>.</p>
+        <p>To learn more about the filter module please read the metaQuantome paper published by <span class="notranslate">Galaxy</span>-P <span class="citation"><a href="#Easterly2019">Easterly <i>et al.</i> 2019</a></span>.</p>
       </blockquote>
     </li>
   </ol>
@@ -1177,7 +1234,7 @@ There are two outputs of the visualization tool : an <strong>HTML file (figure) 
 
 </blockquote>
 
-<figure id="figure-1"><img src="../../images/T2_taxa.png" alt="T2_taxa" width="85%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Bar Chart visualization of Top 5 genus present in T2 sample.</figcaption></figure>
+<figure id="figure-1"><img src="../../images/T2_taxa.png" alt="T2_taxa. " width="85%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> Bar Chart visualization of Top 5 genus present in T2 sample.</figcaption></figure>
 
 <blockquote class="question">
   <h3 id="question-questions-2"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -1223,7 +1280,7 @@ There are two outputs of the visualization tool : an <strong>HTML file (figure) 
 
 </blockquote>
 
-<figure id="figure-2"><img src="../../images/T7_taxa.png" alt="T7_taxa" width="85%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Bar Chart visualization of Top 5 genus present in T7 sample.</figcaption></figure>
+<figure id="figure-2"><img src="../../images/T7_taxa.png" alt="T7_taxa. " width="85%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Bar Chart visualization of Top 5 genus present in T7 sample.</figcaption></figure>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-bar-chart-visualization-of-taxonomy-in-t4-sample"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Bar chart visualization of Taxonomy in T4 sample.</h3>
@@ -1249,7 +1306,7 @@ There are two outputs of the visualization tool : an <strong>HTML file (figure) 
 
 </blockquote>
 
-<figure id="figure-3"><img src="../../images/T4_taxa.png" alt="T4_taxa" width="85%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Bar Chart visualization of Top 5 genus present in T4 sample.</figcaption></figure>
+<figure id="figure-3"><img src="../../images/T4_taxa.png" alt="T4_taxa. " width="85%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 3:</span> Bar Chart visualization of Top 5 genus present in T4 sample.</figcaption></figure>
 
 <h2 id="metaquantome-visualize-volcano-plots"><em>metaQuantome: visualize</em> Volcano Plots</h2>
 
@@ -1284,7 +1341,7 @@ There are two outputs of the visualization tool : an <strong>HTML file (figure) 
 
 </blockquote>
 
-<figure id="figure-4"><img src="../../images/T2-T4-taxa-volcano.png" alt="T2-T4-taxa-volcano" width="100%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Volcano plot for differentially expressed taxa comparing sample T4 and T2.</figcaption></figure>
+<figure id="figure-4"><img src="../../images/T2-T4-taxa-volcano.png" alt="T2-T4-taxa-volcano. " width="100%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 4:</span> Volcano plot for differentially expressed taxa comparing sample T4 and T2.</figcaption></figure>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-volcano-plot-visualization-of-the-data-t7-and-t2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Volcano Plot visualization of the data T7 and T2.</h3>
@@ -1310,7 +1367,7 @@ There are two outputs of the visualization tool : an <strong>HTML file (figure) 
 
 </blockquote>
 
-<figure id="figure-5"><img src="../../images/T2-T7-taxa-volcano.png" alt="T2-T7-taxa-volcano" width="100%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Volcano plot for differentially expressed taxa comparing sample T7 and T2.</figcaption></figure>
+<figure id="figure-5"><img src="../../images/T2-T7-taxa-volcano.png" alt="T2-T7-taxa-volcano. " width="100%" loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 5:</span> Volcano plot for differentially expressed taxa comparing sample T7 and T2.</figcaption></figure>
 
 <blockquote class="question">
   <h3 id="question-questions-3"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -1365,45 +1422,17 @@ There are two outputs of the visualization tool : an <strong>HTML file (figure) 
 
                 
                 <h1 id="bibliography">References</h1>
-                <ol class="bibliography"><li><span id="Galaxy-P">Team, G.-P. <b>Galaxy-P</b>.</span>
-    
-    
-    
-      <!-- prevent duplicate doi links -->
-      
-      <a href="http://galaxyp.org/">http://galaxyp.org/</a>
-      
-    
-
-</li>
-<li><span id="Easterly2019">Easterly, C. W., R. Sajulga, S. Mehta, J. Johnson, P. Kumar <i>et al.</i>, 2019 <b>metaQuantome: An Integrated,  Quantitative Metaproteomics Approach Reveals Connections Between Taxonomy and Protein Function in Complex Microbiomes</b>. Molecular &amp; Cellular Proteomics 18: S82–S91.</span>
-    
-    
-    <a href="https://doi.org/10.1074/mcp.ra118.001240">10.1074/mcp.ra118.001240</a>
-    
-    
-      <!-- prevent duplicate doi links -->
-      
-    
-
-</li>
-<li><span id="Delogu2020">Delogu, F., B. J. Kunath, P. N. Evans, M. Ø. Arntzen, T. R. Hvidsten <i>et al.</i>, 2020 <b>Integration of absolute multi-omics reveals dynamic protein-to-RNA ratios and metabolic interplay within mixed-domain microbiomes</b>. Nature Communications 11:</span>
-    
-    
-    <a href="https://doi.org/10.1038/s41467-020-18543-0">10.1038/s41467-020-18543-0</a>
-    
-    
-      <!-- prevent duplicate doi links -->
-      
-    
-
-</li></ol>
+                <ol class="bibliography"><li id="Easterly2019">Easterly, C. W., R. Sajulga, S. Mehta, J. Johnson, P. Kumar <i>et al.</i>, 2019 <b>metaQuantome: An Integrated,  Quantitative Metaproteomics Approach Reveals Connections Between Taxonomy and Protein Function in Complex Microbiomes</b>. Molecular &amp; Cellular Proteomics 18: S82–S91. <a href="https://doi.org/10.1074/mcp.ra118.001240">10.1074/mcp.ra118.001240</a></li>
+<li id="Delogu2020">Delogu, F., B. J. Kunath, P. N. Evans, M. Ø. Arntzen, T. R. Hvidsten <i>et al.</i>, 2020 <b>Integration of absolute multi-omics reveals dynamic protein-to-RNA ratios and metabolic interplay within mixed-domain microbiomes</b>. Nature Communications 11: <a href="https://doi.org/10.1038/s41467-020-18543-0">10.1038/s41467-020-18543-0</a></li>
+<li id="Galaxy-P">Team, G.-P. <b>Galaxy-P</b>. <a href="http://galaxyp.org/">http://galaxyp.org/</a></li></ol>
                 
 
                 
 
                 <h1>Feedback</h1>
-                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
 
                 <div id="feedback-button">
                     <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
@@ -1529,6 +1558,8 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                         
                     
                         
+                    
+                        
                             
                             <li> Metaproteomics tutorial:
                             
@@ -1567,6 +1598,8 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                         
                     
                 
+                    
+                        
                     
                         
                     
