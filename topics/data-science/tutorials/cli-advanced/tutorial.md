@@ -67,6 +67,11 @@ contributors:
   - carpentries
   - hexylena
   - bazante1
+  - erasmusplus
+  - avans-atgm
+tags:
+- jupyter-notebook
+- bash
 ---
 
 This tutorial will walk you through the basics of how to use the Unix command line.
@@ -1867,3 +1872,6 @@ without thinking about them.'
 > {: .solution}
 {: .question}
 
+# Final Notes
+
+All of the commands you have run up until now were ad-hoc, interactive commands.
